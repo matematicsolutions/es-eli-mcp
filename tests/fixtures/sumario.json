@@ -1,0 +1,1046 @@
+﻿{
+    "status": {
+        "code": "200",
+        "text": "ok"
+    },
+    "data": {
+        "sumario": {
+            "metadatos": {
+                "publicacion": "BOE",
+                "fecha_publicacion": "20181206"
+            },
+            "diario": [
+                {
+                    "numero": "294",
+                    "sumario_diario": {
+                        "identificador": "BOE-S-2018-294",
+                        "url_pdf": {
+                            "szBytes": "248418",
+                            "szKBytes": "243",
+                            "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-S-2018-294.pdf"
+                        }
+                    },
+                    "seccion": [
+                        {
+                            "codigo": "1",
+                            "nombre": "I. Disposiciones generales",
+                            "departamento": [
+                                {
+                                    "codigo": "7723",
+                                    "nombre": "JEFATURA DEL ESTADO",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "R\u00e9gimen electoral general",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16672",
+                                                "control": "2018\/16877",
+                                                "titulo": "Ley Org\u00e1nica 2\/2018, de 5 de diciembre, para la modificaci\u00f3n de la Ley Org\u00e1nica 5\/1985, de 19 de junio, del R\u00e9gimen Electoral General para garantizar el derecho de sufragio de todas las personas con discapacidad.",
+                                                "url_pdf": {
+                                                    "szBytes": "169085",
+                                                    "szKBytes": "165",
+                                                    "pagina_inicial": "119785",
+                                                    "pagina_final": "119787",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16672.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16672",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16672"
+                                            }
+                                        },
+                                        {
+                                            "nombre": "Datos de car\u00e1cter personal",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16673",
+                                                "control": "2018\/16878",
+                                                "titulo": "Ley Org\u00e1nica 3\/2018, de 5 de diciembre, de Protecci\u00f3n de Datos Personales y garant\u00eda de los derechos digitales.",
+                                                "url_pdf": {
+                                                    "szBytes": "1253872",
+                                                    "szKBytes": "1224",
+                                                    "pagina_inicial": "119788",
+                                                    "pagina_final": "119857",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16673.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16673",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16673"
+                                            }
+                                        },
+                                        {
+                                            "nombre": "Medio ambiente. Montes. Contaminaci\u00f3n atmosf\u00e9rica",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16674",
+                                                "control": "2018\/16879",
+                                                "titulo": "Ley 9\/2018, de 5 de diciembre, por la que se modifica la Ley 21\/2013, de 9 de diciembre, de evaluaci\u00f3n ambiental, la Ley 21\/2015, de 20 de julio, por la que se modifica la Ley 43\/2003, de 21 de noviembre, de Montes y la Ley 1\/2005, de 9 de marzo, por la que se regula el r\u00e9gimen del comercio de derechos de emisi\u00f3n de gases de efecto invernadero.",
+                                                "url_pdf": {
+                                                    "szBytes": "792740",
+                                                    "szKBytes": "774",
+                                                    "pagina_inicial": "119858",
+                                                    "pagina_final": "119905",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16674.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16674",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16674"
+                                            }
+                                        },
+                                        {
+                                            "nombre": "Demarcaciones hidrogr\u00e1ficas",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16675",
+                                                "control": "2018\/16880",
+                                                "titulo": "Ley 10\/2018, de 5 de diciembre, sobre la transferencia de recursos de 19,99 hm\u00b3 desde la Demarcaci\u00f3n Hidrogr\u00e1fica de los r\u00edos Tinto, Odiel y Piedras a la Demarcaci\u00f3n Hidrogr\u00e1fica del Guadalquivir.",
+                                                "url_pdf": {
+                                                    "szBytes": "227070",
+                                                    "szKBytes": "222",
+                                                    "pagina_inicial": "119906",
+                                                    "pagina_final": "119914",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16675.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16675",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16675"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "9562",
+                                    "nombre": "MINISTERIO DE ASUNTOS EXTERIORES, UNI\u00d3N EUROPEA Y COOPERACI\u00d3N",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Acuerdos internacionales",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16676",
+                                                "control": "2018\/16634",
+                                                "titulo": "Enmiendas al Anexo del Convenio internacional para prevenir la contaminaci\u00f3n por los buques, 1973, modificado por el Protocolo de 1978 (Convenio MARPOL), adoptadas en Londres el 2 de abril de 2016 mediante Resoluci\u00f3n MEPC.274(69).",
+                                                "url_pdf": {
+                                                    "szBytes": "241312",
+                                                    "szKBytes": "236",
+                                                    "pagina_inicial": "119915",
+                                                    "pagina_final": "119917",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16676.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16676",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16676"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "9564",
+                                    "nombre": "MINISTERIO DE TRABAJO, MIGRACIONES Y SEGURIDAD SOCIAL",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Seguridad Social",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16677",
+                                                "control": "2018\/16774",
+                                                "titulo": "Resoluci\u00f3n de 29 de noviembre de 2018, de la Tesorer\u00eda General de la Seguridad Social, por la que se autoriza a diferir el pago de cuotas a las empresas y a los trabajadores por cuenta propia o aut\u00f3nomos afectados por las intensas tormentas acompa\u00f1adas de granizo y pedrisco acaecidas en la Comunitat Valenciana desde el mes de mayo hasta el mes de agosto de 2018.",
+                                                "url_pdf": {
+                                                    "szBytes": "224228",
+                                                    "szKBytes": "219",
+                                                    "pagina_inicial": "119918",
+                                                    "pagina_final": "119919",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16677.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16677",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16677"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "8121",
+                                    "nombre": "COMUNIDAD AUT\u00d3NOMA DE LAS ILLES BALEARS",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Servicios sociales",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16678",
+                                                "control": "2018\/16344",
+                                                "titulo": "Ley 12\/2018, de 15 de noviembre, de servicios a las personas en el \u00e1mbito social en la Comunidad Aut\u00f3noma de las Illes Balears.",
+                                                "url_pdf": {
+                                                    "szBytes": "322861",
+                                                    "szKBytes": "315",
+                                                    "pagina_inicial": "119920",
+                                                    "pagina_final": "119936",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16678.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16678",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16678"
+                                            }
+                                        },
+                                        {
+                                            "nombre": "Cr\u00e9ditos extraordinarios",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16679",
+                                                "control": "2018\/16345",
+                                                "titulo": "Decreto-ley 3\/2018, de 29 de octubre, de concesi\u00f3n de un cr\u00e9dito extraordinario para atender gastos inaplazables derivados de las inundaciones provocadas por las fuertes lluvias del d\u00eda 9 de octubre de 2018 en la comarca de Levante de Mallorca, con cargo a los presupuestos generales de la Comunidad Aut\u00f3noma de las Illes Balears para el a\u00f1o 2018.",
+                                                "url_pdf": {
+                                                    "szBytes": "235618",
+                                                    "szKBytes": "230",
+                                                    "pagina_inicial": "119937",
+                                                    "pagina_final": "119939",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16679.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16679",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16679"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "9531",
+                                    "nombre": "COMUNIDAD DE CASTILLA Y LE\u00d3N",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Tributos",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16680",
+                                                "control": "2018\/16349",
+                                                "titulo": "Ley 6\/2018, de 13 de noviembre, por la que se modifica el impuesto sobre la afecci\u00f3n medioambiental causada por determinados aprovechamientos del agua embalsada, por los parques e\u00f3licos y por las instalaciones de transporte de energ\u00eda el\u00e9ctrica de alta tensi\u00f3n regulado en el texto refundido de las disposiciones legales de la Comunidad de Castilla y Le\u00f3n en materia de tributos propios y cedidos.",
+                                                "url_pdf": {
+                                                    "szBytes": "239728",
+                                                    "szKBytes": "234",
+                                                    "pagina_inicial": "119940",
+                                                    "pagina_final": "119943",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16680.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16680",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16680"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "codigo": "2A",
+                            "nombre": "II. Autoridades y personal. - A. Nombramientos, situaciones e incidencias",
+                            "departamento": [
+                                {
+                                    "codigo": "4810",
+                                    "nombre": "MINISTERIO DE JUSTICIA",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Destinos",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16681",
+                                                "control": "2018\/16640",
+                                                "titulo": "Resoluci\u00f3n de 21 de noviembre de 2018, de la Subsecretar\u00eda, por la que se resuelve la convocatoria de libre designaci\u00f3n, efectuada por Resoluci\u00f3n de 27 de septiembre de 2018.",
+                                                "url_pdf": {
+                                                    "szBytes": "171982",
+                                                    "szKBytes": "168",
+                                                    "pagina_inicial": "119944",
+                                                    "pagina_final": "119945",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16681.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16681",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16681"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "9563",
+                                    "nombre": "MINISTERIO DE EDUCACI\u00d3N Y FORMACI\u00d3N PROFESIONAL",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Nombramientos",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16682",
+                                                    "control": "2018\/16648",
+                                                    "titulo": "Orden EFP\/1300\/2018, de 31 de octubre, por la que, a propuesta de la Consejer\u00eda de Educaci\u00f3n de la Comunidad Aut\u00f3noma de Andaluc\u00eda, por estimaci\u00f3n de recurso de reposici\u00f3n, se nombra funcionario de carrera del Cuerpo de Profesores de Ense\u00f1anza Secundaria a don Epifanio Garc\u00eda Garc\u00eda.",
+                                                    "url_pdf": {
+                                                        "szBytes": "226470",
+                                                        "szKBytes": "221",
+                                                        "pagina_inicial": "119946",
+                                                        "pagina_final": "119947",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16682.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16682",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16682"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16683",
+                                                    "control": "2018\/16647",
+                                                    "titulo": "Orden EFP\/1301\/2018, de 19 de noviembre, por la que, a propuesta de la Consejer\u00eda de Educaci\u00f3n de la Comunidad Aut\u00f3noma de Andaluc\u00eda, se nombran funcionarios de carrera del Cuerpo de Maestros, a los seleccionados en el procedimiento selectivo convocado por Orden de 31 de marzo de 2017.",
+                                                    "url_pdf": {
+                                                        "szBytes": "3809778",
+                                                        "szKBytes": "3720",
+                                                        "pagina_inicial": "119948",
+                                                        "pagina_final": "119985",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16683.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16683",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16683"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "9568",
+                                    "nombre": "MINISTERIO DE SANIDAD, CONSUMO Y BIENESTAR SOCIAL",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Destinos",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16684",
+                                                "control": "2018\/16654",
+                                                "titulo": "Resoluci\u00f3n de 26 de noviembre de 2018, de la Subsecretar\u00eda, por la que se resuelve el concurso general, convocado por Resoluci\u00f3n de 7 de septiembre de 2018, en el Instituto de la Juventud.",
+                                                "url_pdf": {
+                                                    "szBytes": "242176",
+                                                    "szKBytes": "237",
+                                                    "pagina_inicial": "119986",
+                                                    "pagina_final": "119989",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16684.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16684",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16684"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "codigo": "2B",
+                            "nombre": "II. Autoridades y personal. - B. Oposiciones y concursos",
+                            "departamento": [
+                                {
+                                    "codigo": "9525",
+                                    "nombre": "ADMINISTRACI\u00d3N LOCAL",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Personal funcionario",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16690",
+                                                "control": "2018\/16689",
+                                                "titulo": "Resoluci\u00f3n de 21 de noviembre de 2018, de la Diputaci\u00f3n Provincial de \u00c1vila, referente a la convocatoria para proveer puestos de trabajo por el sistema de concurso.",
+                                                "url_pdf": {
+                                                    "szBytes": "213827",
+                                                    "szKBytes": "209",
+                                                    "pagina_inicial": "119995",
+                                                    "pagina_final": "119995",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16690.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16690",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16690"
+                                            }
+                                        },
+                                        {
+                                            "nombre": "Personal funcionario y laboral",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16685",
+                                                    "control": "2018\/16817",
+                                                    "titulo": "Resoluci\u00f3n de 11 de octubre de 2018, del Ayuntamiento de Salamanca, referente a la convocatoria para proveer varias plazas.",
+                                                    "url_pdf": {
+                                                        "szBytes": "213757",
+                                                        "szKBytes": "209",
+                                                        "pagina_inicial": "119990",
+                                                        "pagina_final": "119990",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16685.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16685",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16685"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16686",
+                                                    "control": "2018\/16683",
+                                                    "titulo": "Resoluci\u00f3n de 15 de noviembre de 2018, del Ayuntamiento de Canet de Mar (Barcelona), referente a la convocatoria para proveer una plaza.",
+                                                    "url_pdf": {
+                                                        "szBytes": "215038",
+                                                        "szKBytes": "210",
+                                                        "pagina_inicial": "119991",
+                                                        "pagina_final": "119991",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16686.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16686",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16686"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16687",
+                                                    "control": "2018\/16684",
+                                                    "titulo": "Resoluci\u00f3n de 15 de noviembre de 2018, del Ayuntamiento de Coir\u00f3s (A Coru\u00f1a), referente a la convocatoria para proveer varias plazas.",
+                                                    "url_pdf": {
+                                                        "szBytes": "218647",
+                                                        "szKBytes": "214",
+                                                        "pagina_inicial": "119992",
+                                                        "pagina_final": "119992",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16687.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16687",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16687"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16688",
+                                                    "control": "2018\/16685",
+                                                    "titulo": "Resoluci\u00f3n de 19 de noviembre de 2018, del Ayuntamiento de San Roque (C\u00e1diz), referente a la convocatoria para proveer varias plazas.",
+                                                    "url_pdf": {
+                                                        "szBytes": "218557",
+                                                        "szKBytes": "213",
+                                                        "pagina_inicial": "119993",
+                                                        "pagina_final": "119993",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16688.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16688",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16688"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16689",
+                                                    "control": "2018\/16686",
+                                                    "titulo": "Resoluci\u00f3n de 20 de noviembre de 2018, del Ayuntamiento de Oiartzun (Gipuzkoa), referente a la convocatoria para proveer varias plazas.",
+                                                    "url_pdf": {
+                                                        "szBytes": "215235",
+                                                        "szKBytes": "210",
+                                                        "pagina_inicial": "119994",
+                                                        "pagina_final": "119994",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16689.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16689",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16689"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16691",
+                                                    "control": "2018\/16687",
+                                                    "titulo": "Resoluci\u00f3n de 21 de noviembre de 2018, del Ayuntamiento de Benacaz\u00f3n (Sevilla), referente a la convocatoria para proveer una plaza.",
+                                                    "url_pdf": {
+                                                        "szBytes": "215791",
+                                                        "szKBytes": "211",
+                                                        "pagina_inicial": "119996",
+                                                        "pagina_final": "119996",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16691.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16691",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16691"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "310",
+                                    "nombre": "UNIVERSIDADES",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Cuerpos docentes universitarios",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16692",
+                                                    "control": "2018\/16693",
+                                                    "titulo": "Resoluci\u00f3n de 22 de noviembre de 2018, de la Universidad Complutense de Madrid, por la que se convoca concurso de acceso a plaza de cuerpos docentes universitarios.",
+                                                    "url_pdf": {
+                                                        "szBytes": "456837",
+                                                        "szKBytes": "446",
+                                                        "pagina_inicial": "119997",
+                                                        "pagina_final": "120005",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16692.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16692",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16692"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16693",
+                                                    "control": "2018\/16694",
+                                                    "titulo": "Resoluci\u00f3n de 22 de noviembre de 2018, de la Universidad Complutense de Madrid, por la que se convoca concurso de acceso a plaza de cuerpos docentes universitarios.",
+                                                    "url_pdf": {
+                                                        "szBytes": "452079",
+                                                        "szKBytes": "441",
+                                                        "pagina_inicial": "120006",
+                                                        "pagina_final": "120014",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16693.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16693",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16693"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "codigo": "3",
+                            "nombre": "III. Otras disposiciones",
+                            "departamento": [
+                                {
+                                    "codigo": "5140",
+                                    "nombre": "MINISTERIO DE HACIENDA",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Ciudad de Ceuta. Convenio",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16694",
+                                                    "control": "2018\/16842",
+                                                    "titulo": "Resoluci\u00f3n de 4 de diciembre de 2018, de la Secretar\u00eda General de Financiaci\u00f3n Auton\u00f3mica y Local, por la que se publica el Convenio por el que se instrumenta la subvenci\u00f3n nominativa prevista en los Presupuestos Generales del Estado de 2018 a la Ciudad de Ceuta, para la financiaci\u00f3n de actuaciones en Ceuta.",
+                                                    "url_pdf": {
+                                                        "szBytes": "256262",
+                                                        "szKBytes": "250",
+                                                        "pagina_inicial": "120015",
+                                                        "pagina_final": "120019",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16694.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16694",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16694"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16695",
+                                                    "control": "2018\/16843",
+                                                    "titulo": "Resoluci\u00f3n de 4 de diciembre de 2018, de la Secretar\u00eda General de Financiaci\u00f3n Auton\u00f3mica y Local, por la que se publica el Convenio por el que se instrumenta la subvenci\u00f3n nominativa prevista en los Presupuestos Generales del Estado de 2018 a favor de la Ciudad de Ceuta, para la financiaci\u00f3n de los costes de funcionamiento de la planta desalinizadora.",
+                                                    "url_pdf": {
+                                                        "szBytes": "250228",
+                                                        "szKBytes": "244",
+                                                        "pagina_inicial": "120020",
+                                                        "pagina_final": "120024",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16695.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16695",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16695"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "nombre": "Ciudad de Melilla. Convenio",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16696",
+                                                    "control": "2018\/16844",
+                                                    "titulo": "Resoluci\u00f3n de 4 de diciembre de 2018, de la Secretar\u00eda General de Financiaci\u00f3n Auton\u00f3mica y Local, por la que se publica el Convenio por el que se instrumenta la subvenci\u00f3n nominativa prevista en los Presupuestos Generales del Estado de 2018 a favor de la Ciudad de Melilla, para la financiaci\u00f3n de los costes de funcionamiento de la planta desalinizadora.",
+                                                    "url_pdf": {
+                                                        "szBytes": "250039",
+                                                        "szKBytes": "244",
+                                                        "pagina_inicial": "120025",
+                                                        "pagina_final": "120029",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16696.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16696",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16696"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16697",
+                                                    "control": "2018\/16845",
+                                                    "titulo": "Resoluci\u00f3n de 4 de diciembre de 2018, de la Secretar\u00eda General de Financiaci\u00f3n Auton\u00f3mica y Local, por la que se publica el Convenio por el que se instrumenta la subvenci\u00f3n nominativa prevista en los Presupuestos Generales del Estado de 2018 a la Ciudad de Melilla, para la financiaci\u00f3n de actuaciones en Melilla.",
+                                                    "url_pdf": {
+                                                        "szBytes": "263322",
+                                                        "szKBytes": "257",
+                                                        "pagina_inicial": "120030",
+                                                        "pagina_final": "120034",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16697.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16697",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16697"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16698",
+                                                    "control": "2018\/16846",
+                                                    "titulo": "Resoluci\u00f3n de 4 de diciembre de 2018, de la Secretar\u00eda General de Financiaci\u00f3n Auton\u00f3mica y Local, por la que se publica el Convenio por el que se instrumenta la subvenci\u00f3n nominativa prevista en los Presupuestos Generales del Estado de 2018 a la Ciudad de Melilla, para reparar los da\u00f1os causados por el terremoto de 25 de enero de 2016.",
+                                                    "url_pdf": {
+                                                        "szBytes": "253909",
+                                                        "szKBytes": "248",
+                                                        "pagina_inicial": "120035",
+                                                        "pagina_final": "120039",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16698.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16698",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16698"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "nombre": "Convenios",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16699",
+                                                "control": "2018\/16847",
+                                                "titulo": "Resoluci\u00f3n de 4 de diciembre de 2018, de la Secretar\u00eda General de Financiaci\u00f3n Auton\u00f3mica y Local, por la que se publica el Convenio por el que se instrumenta la subvenci\u00f3n nominativa prevista en los Presupuestos Generales del Estado de 2018 al Ayuntamiento de C\u00f3rdoba, para financiar inversiones.",
+                                                "url_pdf": {
+                                                    "szBytes": "315705",
+                                                    "szKBytes": "308",
+                                                    "pagina_inicial": "120040",
+                                                    "pagina_final": "120045",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16699.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16699",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16699"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "3210",
+                                    "nombre": "MINISTERIO DE FOMENTO",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Practicaje portuario",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16700",
+                                                "control": "2018\/16716",
+                                                "titulo": "Resoluci\u00f3n de 12 de noviembre de 2018, de la Direcci\u00f3n General de la Marina Mercante, por la que se convocan pruebas espec\u00edficas para el reconocimiento de la capacitaci\u00f3n profesional para prestar servicios portuarios de practicaje en el puerto de Valencia.",
+                                                "url_pdf": {
+                                                    "szBytes": "232732",
+                                                    "szKBytes": "227",
+                                                    "pagina_inicial": "120046",
+                                                    "pagina_final": "120048",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16700.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16700",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16700"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "5250",
+                                    "nombre": "MINISTERIO DE INDUSTRIA, COMERCIO Y TURISMO",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Convenios",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16701",
+                                                    "control": "2018\/16729",
+                                                    "titulo": "Resoluci\u00f3n de 14 de noviembre de 2018, de la Direcci\u00f3n General de Pol\u00edtica Comercial y Competitividad, por la que se publica el Convenio con la Fundaci\u00f3n R\u00edo Safari Elche, para el dep\u00f3sito y mantenimiento de espec\u00edmenes CITES decomisados.",
+                                                    "url_pdf": {
+                                                        "szBytes": "258332",
+                                                        "szKBytes": "252",
+                                                        "pagina_inicial": "120049",
+                                                        "pagina_final": "120054",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16701.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16701",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16701"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16702",
+                                                    "control": "2018\/16730",
+                                                    "titulo": "Resoluci\u00f3n de 14 de noviembre de 2018, de la Direcci\u00f3n General de Pol\u00edtica Comercial y Competitividad, por la que se publica el Convenio con la Asociaci\u00f3n Anfibios y Reptiles en Conservaci\u00f3n, para el dep\u00f3sito y mantenimiento de espec\u00edmenes CITES decomisados.",
+                                                    "url_pdf": {
+                                                        "szBytes": "258684",
+                                                        "szKBytes": "253",
+                                                        "pagina_inicial": "120055",
+                                                        "pagina_final": "120060",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16702.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16702",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16702"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16703",
+                                                    "control": "2018\/16731",
+                                                    "titulo": "Resoluci\u00f3n de 14 de noviembre de 2018, de la Direcci\u00f3n General de Pol\u00edtica Comercial y Competitividad, por la que se publica el Convenio con la Reserva Natural el Castillo de las Guardas, SL, para el dep\u00f3sito y mantenimiento de espec\u00edmenes CITES decomisados.",
+                                                    "url_pdf": {
+                                                        "szBytes": "261025",
+                                                        "szKBytes": "255",
+                                                        "pagina_inicial": "120061",
+                                                        "pagina_final": "120066",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16703.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16703",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16703"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16704",
+                                                    "control": "2018\/16732",
+                                                    "titulo": "Resoluci\u00f3n de 14 de noviembre de 2018, de la Direcci\u00f3n General de Pol\u00edtica Comercial y Competitividad, por la que se publica el Convenio con Parque Natural El Sirer, SL, para el dep\u00f3sito y mantenimiento de espec\u00edmenes CITES decomisados.",
+                                                    "url_pdf": {
+                                                        "szBytes": "258790",
+                                                        "szKBytes": "253",
+                                                        "pagina_inicial": "120067",
+                                                        "pagina_final": "120072",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16704.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16704",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16704"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "3120",
+                                    "nombre": "MINISTERIO DE AGRICULTURA, PESCA Y ALIMENTACI\u00d3N",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Derecho de la Uni\u00f3n Europea",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16705",
+                                                    "control": "2018\/16737",
+                                                    "titulo": "Resoluci\u00f3n de 16 de noviembre de 2018, del Fondo Espa\u00f1ol de Garant\u00eda Agraria, O.A, por la que se publica el Acuerdo del Consejo de Ministros de 11 de octubre de 2018, por el que se aprueba la terminaci\u00f3n del procedimiento de repercusi\u00f3n de responsabilidades por incumplimiento del derecho de la Uni\u00f3n Europea iniciado a la Comunitat Valenciana.",
+                                                    "url_pdf": {
+                                                        "szBytes": "236237",
+                                                        "szKBytes": "231",
+                                                        "pagina_inicial": "120073",
+                                                        "pagina_final": "120075",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16705.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16705",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16705"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16706",
+                                                    "control": "2018\/16738",
+                                                    "titulo": "Resoluci\u00f3n de 16 de noviembre de 2018, del Fondo Espa\u00f1ol de Garant\u00eda Agraria, O.A, por la que se publica el Acuerdo del Consejo de Ministros de 11 de octubre de 2018, por el que se aprueba la terminaci\u00f3n del procedimiento de repercusi\u00f3n de responsabilidades por incumplimiento del derecho de la Uni\u00f3n Europea iniciado a la Comunidad Aut\u00f3noma de La Rioja.",
+                                                    "url_pdf": {
+                                                        "szBytes": "235664",
+                                                        "szKBytes": "230",
+                                                        "pagina_inicial": "120076",
+                                                        "pagina_final": "120078",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16706.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16706",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16706"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16707",
+                                                    "control": "2018\/16739",
+                                                    "titulo": "Resoluci\u00f3n de 16 de noviembre de 2018, del Fondo Espa\u00f1ol de Garant\u00eda Agraria, O.A, por la que se publica el Acuerdo del Consejo de Ministros de 11 de octubre de 2018, por el que se aprueba la terminaci\u00f3n del procedimiento de repercusi\u00f3n de responsabilidades por incumplimiento del derecho de la Uni\u00f3n Europea iniciado a la Comunidad Aut\u00f3noma de Extremadura.",
+                                                    "url_pdf": {
+                                                        "szBytes": "234952",
+                                                        "szKBytes": "229",
+                                                        "pagina_inicial": "120079",
+                                                        "pagina_final": "120081",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16707.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16707",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16707"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16708",
+                                                    "control": "2018\/16740",
+                                                    "titulo": "Resoluci\u00f3n de 16 de noviembre de 2018, del Fondo Espa\u00f1ol de Garant\u00eda Agraria, O.A, por la que se publica el Acuerdo del Consejo de Ministros de 11 de octubre de 2018, por el que se aprueba la terminaci\u00f3n del procedimiento de repercusi\u00f3n de responsabilidades por incumplimiento del derecho de la Uni\u00f3n Europea iniciado a la Comunidad Aut\u00f3noma del Principado de Asturias.",
+                                                    "url_pdf": {
+                                                        "szBytes": "235332",
+                                                        "szKBytes": "230",
+                                                        "pagina_inicial": "120082",
+                                                        "pagina_final": "120084",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16708.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16708",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16708"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16709",
+                                                    "control": "2018\/16741",
+                                                    "titulo": "Resoluci\u00f3n de 16 de noviembre de 2018, del Fondo Espa\u00f1ol de Garant\u00eda Agraria, O.A, por la que se publica el Acuerdo del Consejo de Ministros de 11 de octubre de 2018, por el que se aprueba la terminaci\u00f3n del procedimiento de repercusi\u00f3n de responsabilidades por incumplimiento del derecho de la Uni\u00f3n Europea iniciado a la Comunidad Aut\u00f3noma de Galicia.",
+                                                    "url_pdf": {
+                                                        "szBytes": "234695",
+                                                        "szKBytes": "229",
+                                                        "pagina_inicial": "120085",
+                                                        "pagina_final": "120087",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16709.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16709",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16709"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "9566",
+                                    "nombre": "MINISTERIO PARA LA TRANSICI\u00d3N ECOL\u00d3GICA",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Ayudas",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16710",
+                                                "control": "2018\/16853",
+                                                "titulo": "Orden TEC\/1302\/2018, de 4 de diciembre, por la que se establecen las disposiciones necesarias para instrumentar un sistema de ayudas a la inversi\u00f3n en instalaciones de producci\u00f3n de energ\u00eda el\u00e9ctrica a partir de fuentes renovables en territorios no peninsulares y se determina la transferencia de 60 millones de euros procedentes del super\u00e1vit el\u00e9ctrico al presupuesto del Instituto para la Diversificaci\u00f3n y Ahorro de la Energ\u00eda con efectos del a\u00f1o 2017.",
+                                                "url_pdf": {
+                                                    "szBytes": "245172",
+                                                    "szKBytes": "239",
+                                                    "pagina_inicial": "120088",
+                                                    "pagina_final": "120091",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16710.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16710",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16710"
+                                            }
+                                        },
+                                        {
+                                            "nombre": "Sector el\u00e9ctrico",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16711",
+                                                "control": "2018\/16852",
+                                                "titulo": "Orden TEC\/1303\/2018, de 27 de noviembre, por la que se ejecutan diversos pronunciamientos judiciales de la Sala de lo Contencioso-Administrativo, Secci\u00f3n Cuarta, de la Audiencia Nacional, por los que se estiman parcialmente los recursos interpuestos contra desestimaci\u00f3n presunta de la solicitud de responsabilidad patrimonial de la administraci\u00f3n por los da\u00f1os ocasionados por la denegaci\u00f3n del abono del complemento de eficiencia a plantas de tratamiento de purines.",
+                                                "url_pdf": {
+                                                    "szBytes": "203154",
+                                                    "szKBytes": "198",
+                                                    "pagina_inicial": "120092",
+                                                    "pagina_final": "120096",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16711.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16711",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16711"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "codigo": "1020",
+                                    "nombre": "BANCO DE ESPA\u00d1A",
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Entidades de cr\u00e9dito",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16712",
+                                                "control": "2018\/16772",
+                                                "titulo": "Resoluci\u00f3n de 22 de noviembre de 2018, del Banco de Espa\u00f1a, por la que se publica la sanci\u00f3n de multa por la infracci\u00f3n muy grave impuesta a Bankia, SA, en su condici\u00f3n de sucesora universal de Banco Mare Nostrum, SA.",
+                                                "url_pdf": {
+                                                    "szBytes": "155517",
+                                                    "szKBytes": "152",
+                                                    "pagina_inicial": "120097",
+                                                    "pagina_final": "120097",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16712.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16712",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16712"
+                                            }
+                                        },
+                                        {
+                                            "nombre": "Mercado de divisas",
+                                            "item": {
+                                                "identificador": "BOE-A-2018-16713",
+                                                "control": "2018\/16863",
+                                                "titulo": "Resoluci\u00f3n de 5 de diciembre de 2018, del Banco de Espa\u00f1a, por la que se publican los cambios del euro correspondientes al d\u00eda 5 de diciembre de 2018, publicados por el Banco Central Europeo, que tendr\u00e1n la consideraci\u00f3n de cambios oficiales, de acuerdo con lo dispuesto en el art\u00edculo 36 de la Ley 46\/1998, de 17 de diciembre, sobre la Introducci\u00f3n del Euro.",
+                                                "url_pdf": {
+                                                    "szBytes": "177032",
+                                                    "szKBytes": "173",
+                                                    "pagina_inicial": "120098",
+                                                    "pagina_final": "120098",
+                                                    "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16713.pdf"
+                                                },
+                                                "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16713",
+                                                "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16713"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "codigo": "5A",
+                            "nombre": "V. Anuncios. - A. Contrataci\u00f3n del Sector P\u00fablico",
+                            "departamento": [
+                                {
+                                    "codigo": "9568",
+                                    "nombre": "MINISTERIO DE SANIDAD, CONSUMO Y BIENESTAR SOCIAL",
+                                    "item": {
+                                        "identificador": "BOE-B-2018-57886",
+                                        "titulo": "Anuncio de licitaci\u00f3n del Organismo Aut\u00f3nomo Instituto de la Juventud. Objeto: Suministro de biomasa de pellets para las caldera de agua caliente sanitaria y calefacci\u00f3n del CEULAJ (INJUVE). Expediente: 6068.",
+                                        "url_pdf": {
+                                            "szBytes": "193853",
+                                            "szKBytes": "189",
+                                            "pagina_inicial": "73609",
+                                            "pagina_final": "73611",
+                                            "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-B-2018-57886.pdf"
+                                        },
+                                        "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-B-2018-57886",
+                                        "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-B-2018-57886"
+                                    }
+                                },
+                                {
+                                    "codigo": "9207",
+                                    "nombre": "OTROS PODERES ADJUDICADORES",
+                                    "item": {
+                                        "identificador": "BOE-B-2018-57887",
+                                        "titulo": "Anuncio de Sorea, Sociedad Regional de Abastecimientos de Aguas, S.A.U., para la contrataci\u00f3n del servicio de limpieza de edificios e instalaciones de Sorea, Sociedad Regional de Abastecimientos de Aguas, S.A.U.",
+                                        "url_pdf": {
+                                            "szBytes": "170228",
+                                            "szKBytes": "166",
+                                            "pagina_inicial": "73612",
+                                            "pagina_final": "73612",
+                                            "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-B-2018-57887.pdf"
+                                        },
+                                        "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-B-2018-57887",
+                                        "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-B-2018-57887"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "codigo": "5B",
+                            "nombre": "V. Anuncios. - B. Otros anuncios oficiales",
+                            "departamento": {
+                                "codigo": "3210",
+                                "nombre": "MINISTERIO DE FOMENTO",
+                                "texto": {
+                                    "item": {
+                                        "identificador": "BOE-B-2018-57888",
+                                        "titulo": "Resoluci\u00f3n de la Autoridad Portuaria de M\u00e1laga por la que se anuncia la suspensi\u00f3n de la convocatoria del concurso p\u00fablico para la ocupaci\u00f3n y explotaci\u00f3n en r\u00e9gimen de concesi\u00f3n administrativa, en la d\u00e1rsena de Guadiaro, de parte de su l\u00e1mina de agua y su extensi\u00f3n de tierra en los muelles 1 y 2 del Puerto de M\u00e1laga, como zona n\u00e1utico deportiva destinada al atraque de megayates.",
+                                        "url_pdf": {
+                                            "szBytes": "169370",
+                                            "szKBytes": "165",
+                                            "pagina_inicial": "73613",
+                                            "pagina_final": "73613",
+                                            "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-B-2018-57888.pdf"
+                                        },
+                                        "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-B-2018-57888",
+                                        "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-B-2018-57888"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "codigo": "T",
+                            "nombre": "T.C. Secci\u00f3n del Tribunal Constitucional",
+                            "departamento": {
+                                "codigo": "1410",
+                                "nombre": "TRIBUNAL CONSTITUCIONAL",
+                                "texto": {
+                                    "epigrafe": [
+                                        {
+                                            "nombre": "Sentencias",
+                                            "item": [
+                                                {
+                                                    "identificador": "BOE-A-2018-16714",
+                                                    "control": "2018\/16425",
+                                                    "titulo": "Sala Segunda. Sentencia 113\/2018, de 29 de octubre de 2018. Recurso de amparo 3648-2017. Promovido por don Hamadi Sedibeh en relaci\u00f3n con las sentencias dictadas por la Sala de lo Penal del Tribunal Supremo y la Audiencia Provincial de Barcelona que le condenaron por un delito de tr\u00e1fico de sustancias estupefacientes. Vulneraci\u00f3n de los derechos a la defensa y a un proceso con todas las garant\u00edas: resoluciones judiciales que acuerdan, sin dar audiencia a las partes, el cumplimiento parcial de la pena de prisi\u00f3n y posterior expulsi\u00f3n del territorio nacional.",
+                                                    "url_pdf": {
+                                                        "szBytes": "270789",
+                                                        "szKBytes": "264",
+                                                        "pagina_inicial": "120099",
+                                                        "pagina_final": "120107",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16714.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16714",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16714"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16715",
+                                                    "control": "2018\/16426",
+                                                    "titulo": "Sala Primera. Sentencia 114\/2018, de 29 de octubre de 2018. Recurso de amparo 4487-2017. Promovido por don Jos\u00e9 Francisco Cabrera Vargas en relaci\u00f3n con la sentencia de la Sala de lo Social del Tribunal Superior de Justicia de Canarias, con sede en Las Palmas de Gran Canaria, que declar\u00f3 la procedencia de su despido de la empresa Seguridad Integral Canaria, S.A. Vulneraci\u00f3n del derecho a la libertad sindical en relaci\u00f3n con la libertad de expresi\u00f3n: STC 89\/2018 (despido de un trabajador, miembro del comit\u00e9 de empresa, que asisti\u00f3 a un pleno municipal portando una careta y una camiseta que exhib\u00eda un lema cr\u00edtico con el comportamiento de la empresa y del ayuntamiento de Las Palmas de Gran Canaria y que posteriormente particip\u00f3 en la rueda de prensa en la que se anunci\u00f3 convocatoria de huelga).",
+                                                    "url_pdf": {
+                                                        "szBytes": "275170",
+                                                        "szKBytes": "269",
+                                                        "pagina_inicial": "120108",
+                                                        "pagina_final": "120117",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16715.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16715",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16715"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16716",
+                                                    "control": "2018\/16427",
+                                                    "titulo": "Sala Primera. Sentencia 115\/2018, de 29 de octubre de 2018. Recurso de amparo 4853-2017. Promovido por don C\u00e9sar Cabrera Alejo en relaci\u00f3n con la sentencia de la Sala de lo Social del Tribunal Superior de Justicia de Canarias, con sede en Las Palmas de Gran Canaria, que declar\u00f3 la procedencia de su despido de la empresa Seguridad Integral Canaria, S.A. Vulneraci\u00f3n del derecho a la libertad sindical en relaci\u00f3n con la libertad de expresi\u00f3n: STC 89\/2018 (despido de un trabajador que asisti\u00f3 a un pleno municipal portando una careta y una camiseta que exhib\u00eda un lema cr\u00edtico con el comportamiento de la empresa y del ayuntamiento de Las Palmas de Gran Canaria y que posteriormente particip\u00f3 en la rueda de prensa en la que se anunci\u00f3 convocatoria de huelga).",
+                                                    "url_pdf": {
+                                                        "szBytes": "274951",
+                                                        "szKBytes": "269",
+                                                        "pagina_inicial": "120118",
+                                                        "pagina_final": "120127",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16716.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16716",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16716"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16717",
+                                                    "control": "2018\/16428",
+                                                    "titulo": "Sala Primera. Sentencia 116\/2018, de 29 de octubre de 2018. Recurso de amparo 6017-2017. Promovido por don Cristo Manuel Navarro Casa\u00f1as en relaci\u00f3n con la sentencia de la Sala de lo Social del Tribunal Superior de Justicia de Canarias, con sede en Las Palmas de Gran Canaria, que declar\u00f3 la procedencia de su despido de la empresa Seguridad Integral Canaria, S.A. Vulneraci\u00f3n del derecho a la libertad sindical en relaci\u00f3n con la libertad de expresi\u00f3n: STC 89\/2018 (despido de un trabajador que asisti\u00f3 a un pleno municipal portando una careta y una camiseta que exhib\u00eda un lema cr\u00edtico con el comportamiento de la empresa y del ayuntamiento de Las Palmas de Gran Canaria y que posteriormente particip\u00f3 en la rueda de prensa en la que se anunci\u00f3 convocatoria de huelga).",
+                                                    "url_pdf": {
+                                                        "szBytes": "277007",
+                                                        "szKBytes": "271",
+                                                        "pagina_inicial": "120128",
+                                                        "pagina_final": "120137",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16717.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16717",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16717"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16718",
+                                                    "control": "2018\/16429",
+                                                    "titulo": "Sala Primera. Sentencia 117\/2018, de 29 de octubre de 2018. Recurso de amparo 6299-2017. Promovido por don Javier Jambrina L\u00f3pez y la asociaci\u00f3n Plataforma por permisos iguales e intransferibles de nacimiento y adopci\u00f3n, respecto de las sentencias dictadas por el Tribunal Superior de Justicia de Madrid y un juzgado de lo social y las resoluciones del Instituto Nacional de la Seguridad Social que desestimaron su petici\u00f3n de ampliaci\u00f3n del permiso de paternidad. Supuesta vulneraci\u00f3n del derecho a la igualdad y a no sufrir discriminaci\u00f3n por raz\u00f3n de sexo: STC 111\/2018 (resoluciones administrativas y judiciales que rechazan la equiparaci\u00f3n en extensi\u00f3n temporal del permiso de paternidad con el correlativo de maternidad). Voto particular.",
+                                                    "url_pdf": {
+                                                        "szBytes": "315821",
+                                                        "szKBytes": "308",
+                                                        "pagina_inicial": "120138",
+                                                        "pagina_final": "120154",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16718.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16718",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16718"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16719",
+                                                    "control": "2018\/16430",
+                                                    "titulo": "Sala Segunda. Sentencia 118\/2018, de 29 de octubre de 2018. Recurso de amparo 224-2018. Promovido por don Juan Francisco D\u00edaz Gil en relaci\u00f3n con la sentencia de la Sala de lo Social del Tribunal Superior de Justicia de Canarias, con sede en Las Palmas de Gran Canaria, que declar\u00f3 la procedencia de su despido de la empresa Seguridad Integral Canaria, S.A. Vulneraci\u00f3n del derecho a la libertad sindical en relaci\u00f3n con la libertad de expresi\u00f3n: STC 89\/2018 (despido de un trabajador, miembro del comit\u00e9 de empresa, que asisti\u00f3 a un pleno municipal portando una careta y una camiseta que exhib\u00eda un lema cr\u00edtico con el comportamiento de la empresa y del ayuntamiento de Las Palmas de Gran Canaria y que posteriormente particip\u00f3 en la rueda de prensa en la que se anunci\u00f3 convocatoria de huelga).",
+                                                    "url_pdf": {
+                                                        "szBytes": "297969",
+                                                        "szKBytes": "291",
+                                                        "pagina_inicial": "120155",
+                                                        "pagina_final": "120167",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16719.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16719",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16719"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16720",
+                                                    "control": "2018\/16431",
+                                                    "titulo": "Pleno. Sentencia 119\/2018, de 31 de octubre de 2018. Recurso de inconstitucionalidad 27-2013. Interpuesto por el Presidente del Gobierno en relaci\u00f3n con diversos preceptos de la Ley 1\/2012, de 26 de marzo, para la protecci\u00f3n de los derechos de los consumidores mediante el fomento de la transparencia en la contrataci\u00f3n hipotecaria en la Comunidad de Madrid. Competencias sobre protecci\u00f3n al consumidor y ordenaci\u00f3n del cr\u00e9dito: nulidad de los preceptos legales auton\u00f3micos relativos a la informaci\u00f3n previa a la oferta vinculante.",
+                                                    "url_pdf": {
+                                                        "szBytes": "342273",
+                                                        "szKBytes": "334",
+                                                        "pagina_inicial": "120168",
+                                                        "pagina_final": "120186",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16720.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16720",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16720"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16721",
+                                                    "control": "2018\/16432",
+                                                    "titulo": "Pleno. Sentencia 120\/2018, de 31 de octubre de 2018. Cuesti\u00f3n de inconstitucionalidad 6412-2015. Planteada por la Sala de lo Contencioso-Administrativo del Tribunal Superior de Justicia de Extremadura en relaci\u00f3n con diversos preceptos del texto refundido de las disposiciones legales de la Comunidad Aut\u00f3noma de Extremadura en materia de tributos propios aprobado por el Decreto Legislativo 2\/2006, de 12 de diciembre. L\u00edmites a las potestades tributarias de las Comunidades Aut\u00f3nomas: constitucionalidad de los preceptos legales auton\u00f3micos que regulan el impuesto sobre instalaciones que incidan en el medio ambiente de Extremadura. Votos particulares.",
+                                                    "url_pdf": {
+                                                        "szBytes": "388308",
+                                                        "szKBytes": "379",
+                                                        "pagina_inicial": "120187",
+                                                        "pagina_final": "120214",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16721.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16721",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16721"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16722",
+                                                    "control": "2018\/16433",
+                                                    "titulo": "Pleno. Sentencia 121\/2018, de 31 de octubre de 2018. Cuesti\u00f3n de inconstitucionalidad 6031-2016. Planteada por la Sala de lo Contencioso-Administrativo de la Audiencia Nacional, respecto del \u00faltimo inciso del art\u00edculo 18.2 a).1 de la Ley 20\/2013, de 9 de diciembre de garant\u00eda de la unidad de mercado. Competencias sobre ordenaci\u00f3n general de la econom\u00eda: constitucionalidad del precepto legal que califica como actuaciones limitativas de las libertades de establecimiento y circulaci\u00f3n las resoluciones administrativas que impongan requisitos discriminatorios basados directa o indirectamente en el lugar de residencia o establecimiento del operador (STC 79\/2017).",
+                                                    "url_pdf": {
+                                                        "szBytes": "290960",
+                                                        "szKBytes": "284",
+                                                        "pagina_inicial": "120215",
+                                                        "pagina_final": "120227",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16722.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16722",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16722"
+                                                },
+                                                {
+                                                    "identificador": "BOE-A-2018-16723",
+                                                    "control": "2018\/16434",
+                                                    "titulo": "Pleno. Sentencia 122\/2018, de 31 de octubre de 2018. Recurso de inconstitucionalidad 4710-2017. Interpuesto por cincuenta diputados del Grupo Parlamentario Confederal de Unidos Podemos-En Com\u00fa Podem-En Marea en el Congreso de los Diputados con respecto a diversos preceptos de la Ley 3\/2017, de 27 de junio, de presupuestos generales del Estado para el a\u00f1o 2017. L\u00edmites materiales a las leyes de presupuestos: nulidad de la inclusi\u00f3n en la ley de presupuestos de los preceptos relativos a las limitaciones a la incorporaci\u00f3n de personal laboral al sector p\u00fablico y a la exigencia de responsabilidades a las administraciones p\u00fablicas y entidades dependientes por la utilizaci\u00f3n de la contrataci\u00f3n laboral.",
+                                                    "url_pdf": {
+                                                        "szBytes": "286373",
+                                                        "szKBytes": "280",
+                                                        "pagina_inicial": "120228",
+                                                        "pagina_final": "120239",
+                                                        "texto": "https:\/\/www.boe.es\/boe\/dias\/2018\/12\/06\/pdfs\/BOE-A-2018-16723.pdf"
+                                                    },
+                                                    "url_html": "https:\/\/www.boe.es\/diario_boe\/txt.php?id=BOE-A-2018-16723",
+                                                    "url_xml": "https:\/\/www.boe.es\/diario_boe\/xml.php?id=BOE-A-2018-16723"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

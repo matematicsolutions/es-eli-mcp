@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "es-eli-mcp": {
+      "command": "es-eli-mcp",
+      "env": {
+        "ES_ELI_BASE_URL": "https://www.boe.es/datosabiertos/api",
+        "ES_ELI_CACHE_DIR": "~/.matematic/cache/es-eli",
+        "ES_ELI_AUDIT_DIR": "~/.matematic/audit"
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "_comment": "pubgate:allow - Public BOE open-data test fixtures only. BOE document identifiers are public gazette data, not client PII or Polish company numbers; some coincidentally match the REGON checksum heuristic. No secrets or client data are present in these fixtures.",
+  "allow_paths": ["tests/fixtures/"]
+}

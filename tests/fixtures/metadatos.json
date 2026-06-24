@@ -1,0 +1,40 @@
+﻿{
+    "status": {
+        "code": "200",
+        "text": "ok"
+    },
+    "data": [
+        {
+            "fecha_actualizacion": "20260526T103624Z",
+            "identificador": "BOE-A-2018-16673",
+            "ambito": {
+                "codigo": "1",
+                "texto": "Estatal"
+            },
+            "departamento": {
+                "codigo": "7723",
+                "texto": "Jefatura del Estado"
+            },
+            "rango": {
+                "codigo": "1290",
+                "texto": "Ley Org\u00e1nica"
+            },
+            "fecha_disposicion": "20181205",
+            "numero_oficial": "3\/2018",
+            "titulo": "Ley Org\u00e1nica 3\/2018, de 5 de diciembre, de Protecci\u00f3n de Datos Personales y garant\u00eda de los derechos digitales.",
+            "diario": "Bolet\u00edn Oficial del Estado",
+            "fecha_publicacion": "20181206",
+            "diario_numero": "294",
+            "fecha_vigencia": "20181207",
+            "estatus_derogacion": "N",
+            "estatus_anulacion": "N",
+            "vigencia_agotada": "N",
+            "estado_consolidacion": {
+                "codigo": "3",
+                "texto": "Finalizado"
+            },
+            "url_eli": "https:\/\/www.boe.es\/eli\/es\/lo\/2018\/12\/05\/3",
+            "url_html_consolidada": "https:\/\/www.boe.es\/buscar\/act.php?id=BOE-A-2018-16673"
+        }
+    ]
+}

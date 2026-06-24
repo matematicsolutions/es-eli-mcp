@@ -1,0 +1,1026 @@
+﻿{
+    "status": {
+        "code": "200",
+        "text": "ok"
+    },
+    "data": [
+        {
+            "bloque": [
+                {
+                    "id": "pr",
+                    "titulo": "[preambulo]",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/pr"
+                },
+                {
+                    "id": "ti",
+                    "titulo": "T\u00cdTULO I",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ti"
+                },
+                {
+                    "id": "a1",
+                    "titulo": "Art\u00edculo 1",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1"
+                },
+                {
+                    "id": "a2",
+                    "titulo": "Art\u00edculo 2",
+                    "fecha_actualizacion": "20210527",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2"
+                },
+                {
+                    "id": "a3",
+                    "titulo": "Art\u00edculo 3",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3"
+                },
+                {
+                    "id": "ti-2",
+                    "titulo": "T\u00cdTULO II",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ti-2"
+                },
+                {
+                    "id": "a4",
+                    "titulo": "Art\u00edculo 4",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4"
+                },
+                {
+                    "id": "a5",
+                    "titulo": "Art\u00edculo 5",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5"
+                },
+                {
+                    "id": "a6",
+                    "titulo": "Art\u00edculo 6",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6"
+                },
+                {
+                    "id": "a7",
+                    "titulo": "Art\u00edculo 7",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7"
+                },
+                {
+                    "id": "a8",
+                    "titulo": "Art\u00edculo 8",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8"
+                },
+                {
+                    "id": "a9",
+                    "titulo": "Art\u00edculo 9",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9"
+                },
+                {
+                    "id": "a1-2",
+                    "titulo": "Art\u00edculo 10",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-2"
+                },
+                {
+                    "id": "ti-3",
+                    "titulo": "T\u00cdTULO III",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ti-3"
+                },
+                {
+                    "id": "ci",
+                    "titulo": "CAP\u00cdTULO I",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci"
+                },
+                {
+                    "id": "a1-3",
+                    "titulo": "Art\u00edculo 11",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-3"
+                },
+                {
+                    "id": "ci-2",
+                    "titulo": "CAP\u00cdTULO II",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci-2"
+                },
+                {
+                    "id": "a1-4",
+                    "titulo": "Art\u00edculo 12",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-4"
+                },
+                {
+                    "id": "a1-5",
+                    "titulo": "Art\u00edculo 13",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-5"
+                },
+                {
+                    "id": "a1-6",
+                    "titulo": "Art\u00edculo 14",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-6"
+                },
+                {
+                    "id": "a1-7",
+                    "titulo": "Art\u00edculo 15",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-7"
+                },
+                {
+                    "id": "a1-8",
+                    "titulo": "Art\u00edculo 16",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-8"
+                },
+                {
+                    "id": "a1-9",
+                    "titulo": "Art\u00edculo 17",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-9"
+                },
+                {
+                    "id": "a1-10",
+                    "titulo": "Art\u00edculo 18",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-10"
+                },
+                {
+                    "id": "ti-4",
+                    "titulo": "T\u00cdTULO IV",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ti-4"
+                },
+                {
+                    "id": "a1-11",
+                    "titulo": "Art\u00edculo 19",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a1-11"
+                },
+                {
+                    "id": "a2-2",
+                    "titulo": "Art\u00edculo 20",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-2"
+                },
+                {
+                    "id": "a2-3",
+                    "titulo": "Art\u00edculo 21",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-3"
+                },
+                {
+                    "id": "a2-4",
+                    "titulo": "Art\u00edculo 22",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-4"
+                },
+                {
+                    "id": "a2-5",
+                    "titulo": "Art\u00edculo 23",
+                    "fecha_actualizacion": "20251227",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-5"
+                },
+                {
+                    "id": "a2-6",
+                    "titulo": "Art\u00edculo 24",
+                    "fecha_actualizacion": "20230221",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-6"
+                },
+                {
+                    "id": "a2-7",
+                    "titulo": "Art\u00edculo 25",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-7"
+                },
+                {
+                    "id": "a2-8",
+                    "titulo": "Art\u00edculo 26",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-8"
+                },
+                {
+                    "id": "a2-9",
+                    "titulo": "Art\u00edculo 27",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-9"
+                },
+                {
+                    "id": "tv",
+                    "titulo": "T\u00cdTULO V",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/tv"
+                },
+                {
+                    "id": "ci-3",
+                    "titulo": "CAP\u00cdTULO I",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci-3"
+                },
+                {
+                    "id": "a2-10",
+                    "titulo": "Art\u00edculo 28",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-10"
+                },
+                {
+                    "id": "a2-11",
+                    "titulo": "Art\u00edculo 29",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a2-11"
+                },
+                {
+                    "id": "a3-2",
+                    "titulo": "Art\u00edculo 30",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-2"
+                },
+                {
+                    "id": "a3-3",
+                    "titulo": "Art\u00edculo 31",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-3"
+                },
+                {
+                    "id": "a3-4",
+                    "titulo": "Art\u00edculo 32",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-4"
+                },
+                {
+                    "id": "ci-4",
+                    "titulo": "CAP\u00cdTULO II",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci-4"
+                },
+                {
+                    "id": "a3-5",
+                    "titulo": "Art\u00edculo 33",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-5"
+                },
+                {
+                    "id": "ci-5",
+                    "titulo": "CAP\u00cdTULO III",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci-5"
+                },
+                {
+                    "id": "a3-6",
+                    "titulo": "Art\u00edculo 34",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-6"
+                },
+                {
+                    "id": "a3-7",
+                    "titulo": "Art\u00edculo 35",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-7"
+                },
+                {
+                    "id": "a3-8",
+                    "titulo": "Art\u00edculo 36",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-8"
+                },
+                {
+                    "id": "a3-9",
+                    "titulo": "Art\u00edculo 37",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-9"
+                },
+                {
+                    "id": "ci-6",
+                    "titulo": "CAP\u00cdTULO IV",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci-6"
+                },
+                {
+                    "id": "a3-10",
+                    "titulo": "Art\u00edculo 38",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-10"
+                },
+                {
+                    "id": "a3-11",
+                    "titulo": "Art\u00edculo 39",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a3-11"
+                },
+                {
+                    "id": "tv-2",
+                    "titulo": "T\u00cdTULO VI",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/tv-2"
+                },
+                {
+                    "id": "a4-2",
+                    "titulo": "Art\u00edculo 40",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-2"
+                },
+                {
+                    "id": "a4-3",
+                    "titulo": "Art\u00edculo 41",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-3"
+                },
+                {
+                    "id": "a4-4",
+                    "titulo": "Art\u00edculo 42",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-4"
+                },
+                {
+                    "id": "a4-5",
+                    "titulo": "Art\u00edculo 43",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-5"
+                },
+                {
+                    "id": "tv-3",
+                    "titulo": "T\u00cdTULO VII",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/tv-3"
+                },
+                {
+                    "id": "ci-7",
+                    "titulo": "CAP\u00cdTULO I",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci-7"
+                },
+                {
+                    "id": "s1",
+                    "titulo": "Secci\u00f3n 1",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/s1"
+                },
+                {
+                    "id": "a4-6",
+                    "titulo": "Art\u00edculo 44",
+                    "fecha_actualizacion": "20210527",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-6"
+                },
+                {
+                    "id": "a4-7",
+                    "titulo": "Art\u00edculo 45",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-7"
+                },
+                {
+                    "id": "a4-8",
+                    "titulo": "Art\u00edculo 46",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-8"
+                },
+                {
+                    "id": "a4-9",
+                    "titulo": "Art\u00edculo 47",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-9"
+                },
+                {
+                    "id": "a4-10",
+                    "titulo": "Art\u00edculo 48",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-10"
+                },
+                {
+                    "id": "a4-11",
+                    "titulo": "Art\u00edculo 49",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a4-11"
+                },
+                {
+                    "id": "a5-2",
+                    "titulo": "Art\u00edculo 50",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-2"
+                },
+                {
+                    "id": "s2",
+                    "titulo": "Secci\u00f3n 2",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/s2"
+                },
+                {
+                    "id": "a5-3",
+                    "titulo": "Art\u00edculo 51",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-3"
+                },
+                {
+                    "id": "a5-4",
+                    "titulo": "Art\u00edculo 52",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-4"
+                },
+                {
+                    "id": "a5-5",
+                    "titulo": "Art\u00edculo 53",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-5"
+                },
+                {
+                    "id": "a5-12",
+                    "titulo": "Art\u00edculo 53 bis",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-12"
+                },
+                {
+                    "id": "a5-6",
+                    "titulo": "Art\u00edculo 54",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-6"
+                },
+                {
+                    "id": "s3",
+                    "titulo": "Secci\u00f3n 3",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/s3"
+                },
+                {
+                    "id": "a5-7",
+                    "titulo": "Art\u00edculo 55",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-7"
+                },
+                {
+                    "id": "a5-8",
+                    "titulo": "Art\u00edculo 56",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-8"
+                },
+                {
+                    "id": "ci-8",
+                    "titulo": "CAP\u00cdTULO II",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ci-8"
+                },
+                {
+                    "id": "s1-2",
+                    "titulo": "Secci\u00f3n 1",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/s1-2"
+                },
+                {
+                    "id": "a5-9",
+                    "titulo": "Art\u00edculo 57",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-9"
+                },
+                {
+                    "id": "a5-10",
+                    "titulo": "Art\u00edculo 58",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-10"
+                },
+                {
+                    "id": "a5-11",
+                    "titulo": "Art\u00edculo 59",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a5-11"
+                },
+                {
+                    "id": "s2-2",
+                    "titulo": "Secci\u00f3n 2",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/s2-2"
+                },
+                {
+                    "id": "a6-2",
+                    "titulo": "Art\u00edculo 60",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-2"
+                },
+                {
+                    "id": "a6-3",
+                    "titulo": "Art\u00edculo 61",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-3"
+                },
+                {
+                    "id": "a6-4",
+                    "titulo": "Art\u00edculo 62",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-4"
+                },
+                {
+                    "id": "tv-4",
+                    "titulo": "T\u00cdTULO VIII",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/tv-4"
+                },
+                {
+                    "id": "a6-5",
+                    "titulo": "Art\u00edculo 63",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-5"
+                },
+                {
+                    "id": "a6-6",
+                    "titulo": "Art\u00edculo 64",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-6"
+                },
+                {
+                    "id": "a6-7",
+                    "titulo": "Art\u00edculo 65",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-7"
+                },
+                {
+                    "id": "a6-8",
+                    "titulo": "Art\u00edculo 66",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-8"
+                },
+                {
+                    "id": "a6-9",
+                    "titulo": "Art\u00edculo 67",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-9"
+                },
+                {
+                    "id": "a6-10",
+                    "titulo": "Art\u00edculo 68",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-10"
+                },
+                {
+                    "id": "a6-11",
+                    "titulo": "Art\u00edculo 69",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a6-11"
+                },
+                {
+                    "id": "ti-5",
+                    "titulo": "T\u00cdTULO IX",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/ti-5"
+                },
+                {
+                    "id": "a7-2",
+                    "titulo": "Art\u00edculo 70",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-2"
+                },
+                {
+                    "id": "a7-3",
+                    "titulo": "Art\u00edculo 71",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-3"
+                },
+                {
+                    "id": "a7-4",
+                    "titulo": "Art\u00edculo 72",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-4"
+                },
+                {
+                    "id": "a7-5",
+                    "titulo": "Art\u00edculo 73",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-5"
+                },
+                {
+                    "id": "a7-6",
+                    "titulo": "Art\u00edculo 74",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-6"
+                },
+                {
+                    "id": "a7-7",
+                    "titulo": "Art\u00edculo 75",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-7"
+                },
+                {
+                    "id": "a7-8",
+                    "titulo": "Art\u00edculo 76",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-8"
+                },
+                {
+                    "id": "a7-9",
+                    "titulo": "Art\u00edculo 77",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-9"
+                },
+                {
+                    "id": "a7-10",
+                    "titulo": "Art\u00edculo 78",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-10"
+                },
+                {
+                    "id": "tx",
+                    "titulo": "T\u00cdTULO X",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/tx"
+                },
+                {
+                    "id": "a7-11",
+                    "titulo": "Art\u00edculo 79",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a7-11"
+                },
+                {
+                    "id": "a8-2",
+                    "titulo": "Art\u00edculo 80",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-2"
+                },
+                {
+                    "id": "a8-3",
+                    "titulo": "Art\u00edculo 81",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-3"
+                },
+                {
+                    "id": "a8-4",
+                    "titulo": "Art\u00edculo 82",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-4"
+                },
+                {
+                    "id": "a8-5",
+                    "titulo": "Art\u00edculo 83",
+                    "fecha_actualizacion": "20201230",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-5"
+                },
+                {
+                    "id": "a8-6",
+                    "titulo": "Art\u00edculo 84",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-6"
+                },
+                {
+                    "id": "a8-7",
+                    "titulo": "Art\u00edculo 85",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-7"
+                },
+                {
+                    "id": "a8-8",
+                    "titulo": "Art\u00edculo 86",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-8"
+                },
+                {
+                    "id": "a8-9",
+                    "titulo": "Art\u00edculo 87",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-9"
+                },
+                {
+                    "id": "a8-10",
+                    "titulo": "Art\u00edculo 88",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-10"
+                },
+                {
+                    "id": "a8-11",
+                    "titulo": "Art\u00edculo 89",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a8-11"
+                },
+                {
+                    "id": "a9-2",
+                    "titulo": "Art\u00edculo 90",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-2"
+                },
+                {
+                    "id": "a9-3",
+                    "titulo": "Art\u00edculo 91",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-3"
+                },
+                {
+                    "id": "a9-4",
+                    "titulo": "Art\u00edculo 92",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-4"
+                },
+                {
+                    "id": "a9-5",
+                    "titulo": "Art\u00edculo 93",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-5"
+                },
+                {
+                    "id": "a9-6",
+                    "titulo": "Art\u00edculo 94",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-6"
+                },
+                {
+                    "id": "a9-7",
+                    "titulo": "Art\u00edculo 95",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-7"
+                },
+                {
+                    "id": "a9-8",
+                    "titulo": "Art\u00edculo 96",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-8"
+                },
+                {
+                    "id": "a9-9",
+                    "titulo": "Art\u00edculo 97",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/a9-9"
+                },
+                {
+                    "id": "da",
+                    "titulo": "Disposici\u00f3n adicional primera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da"
+                },
+                {
+                    "id": "da-2",
+                    "titulo": "Disposici\u00f3n adicional segunda",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-2"
+                },
+                {
+                    "id": "da-3",
+                    "titulo": "Disposici\u00f3n adicional tercera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-3"
+                },
+                {
+                    "id": "da-4",
+                    "titulo": "Disposici\u00f3n adicional cuarta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-4"
+                },
+                {
+                    "id": "da-5",
+                    "titulo": "Disposici\u00f3n adicional quinta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-5"
+                },
+                {
+                    "id": "da-6",
+                    "titulo": "Disposici\u00f3n adicional sexta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-6"
+                },
+                {
+                    "id": "da-7",
+                    "titulo": "Disposici\u00f3n adicional s\u00e9ptima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-7"
+                },
+                {
+                    "id": "da-8",
+                    "titulo": "Disposici\u00f3n adicional octava",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-8"
+                },
+                {
+                    "id": "da-9",
+                    "titulo": "Disposici\u00f3n adicional novena",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-9"
+                },
+                {
+                    "id": "da-10",
+                    "titulo": "Disposici\u00f3n adicional d\u00e9cima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-10"
+                },
+                {
+                    "id": "da-11",
+                    "titulo": "Disposici\u00f3n adicional und\u00e9cima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-11"
+                },
+                {
+                    "id": "da-12",
+                    "titulo": "Disposici\u00f3n adicional duod\u00e9cima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-12"
+                },
+                {
+                    "id": "da-13",
+                    "titulo": "Disposici\u00f3n adicional decimotercera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-13"
+                },
+                {
+                    "id": "da-14",
+                    "titulo": "Disposici\u00f3n adicional decimocuarta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-14"
+                },
+                {
+                    "id": "da-15",
+                    "titulo": "Disposici\u00f3n adicional decimoquinta",
+                    "fecha_actualizacion": "20210527",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-15"
+                },
+                {
+                    "id": "da-16",
+                    "titulo": "Disposici\u00f3n adicional decimosexta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-16"
+                },
+                {
+                    "id": "da-17",
+                    "titulo": "Disposici\u00f3n adicional decimos\u00e9ptima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-17"
+                },
+                {
+                    "id": "da-18",
+                    "titulo": "Disposici\u00f3n adicional decimoctava",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-18"
+                },
+                {
+                    "id": "da-19",
+                    "titulo": "Disposici\u00f3n adicional decimonovena",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-19"
+                },
+                {
+                    "id": "da-20",
+                    "titulo": "Disposici\u00f3n adicional vig\u00e9sima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-20"
+                },
+                {
+                    "id": "da-21",
+                    "titulo": "Disposici\u00f3n adicional vig\u00e9sima primera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-21"
+                },
+                {
+                    "id": "da-22",
+                    "titulo": "Disposici\u00f3n adicional vig\u00e9sima segunda",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-22"
+                },
+                {
+                    "id": "da-23",
+                    "titulo": "Disposici\u00f3n adicional vig\u00e9sima tercera",
+                    "fecha_actualizacion": "20230509",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/da-23"
+                },
+                {
+                    "id": "dt",
+                    "titulo": "Disposici\u00f3n transitoria primera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/dt"
+                },
+                {
+                    "id": "dt-2",
+                    "titulo": "Disposici\u00f3n transitoria segunda",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/dt-2"
+                },
+                {
+                    "id": "dt-3",
+                    "titulo": "Disposici\u00f3n transitoria tercera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/dt-3"
+                },
+                {
+                    "id": "dt-4",
+                    "titulo": "Disposici\u00f3n transitoria cuarta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/dt-4"
+                },
+                {
+                    "id": "dt-5",
+                    "titulo": "Disposici\u00f3n transitoria quinta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/dt-5"
+                },
+                {
+                    "id": "dt-6",
+                    "titulo": "Disposici\u00f3n transitoria sexta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/dt-6"
+                },
+                {
+                    "id": "dd",
+                    "titulo": "Disposici\u00f3n derogatoria \u00fanica",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/dd"
+                },
+                {
+                    "id": "df",
+                    "titulo": "Disposici\u00f3n final primera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df"
+                },
+                {
+                    "id": "df-2",
+                    "titulo": "Disposici\u00f3n final segunda",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-2"
+                },
+                {
+                    "id": "df-3",
+                    "titulo": "Disposici\u00f3n final tercera",
+                    "fecha_actualizacion": "20190625",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-3"
+                },
+                {
+                    "id": "df-4",
+                    "titulo": "Disposici\u00f3n final cuarta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-4"
+                },
+                {
+                    "id": "df-5",
+                    "titulo": "Disposici\u00f3n final quinta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-5"
+                },
+                {
+                    "id": "df-6",
+                    "titulo": "Disposici\u00f3n final sexta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-6"
+                },
+                {
+                    "id": "df-7",
+                    "titulo": "Disposici\u00f3n final s\u00e9ptima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-7"
+                },
+                {
+                    "id": "df-8",
+                    "titulo": "Disposici\u00f3n final octava",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-8"
+                },
+                {
+                    "id": "df-9",
+                    "titulo": "Disposici\u00f3n final novena",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-9"
+                },
+                {
+                    "id": "df-10",
+                    "titulo": "Disposici\u00f3n final d\u00e9cima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-10"
+                },
+                {
+                    "id": "df-11",
+                    "titulo": "Disposici\u00f3n final und\u00e9cima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-11"
+                },
+                {
+                    "id": "df-12",
+                    "titulo": "Disposici\u00f3n final duod\u00e9cima",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-12"
+                },
+                {
+                    "id": "df-13",
+                    "titulo": "Disposici\u00f3n final decimotercera",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-13"
+                },
+                {
+                    "id": "df-14",
+                    "titulo": "Disposici\u00f3n final decimocuarta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-14"
+                },
+                {
+                    "id": "df-15",
+                    "titulo": "Disposici\u00f3n final decimoquinta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-15"
+                },
+                {
+                    "id": "df-16",
+                    "titulo": "Disposici\u00f3n final decimosexta",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/df-16"
+                },
+                {
+                    "id": "fi",
+                    "titulo": "[firma]",
+                    "fecha_actualizacion": "20181206",
+                    "url": "https:\/\/www.boe.es\/datosabiertos\/api\/legislacion-consolidada\/id\/BOE-A-2018-16673\/texto\/bloque\/fi"
+                }
+            ]
+        }
+    ]
+}
