@@ -2,6 +2,23 @@
 
 <!-- mcp-name: io.github.matematicsolutions/es-eli-mcp -->
 
+
+## Instalacja (jedna komenda)
+
+Opublikowany na PyPI + MCP Registry (`io.github.matematicsolutions/es-eli-mcp`). Uruchomienie bez klonowania:
+
+```bash
+uvx es-eli-mcp
+```
+
+Konfiguracja klienta MCP (stdio):
+
+```json
+{ "mcpServers": { "es-eli-mcp": { "command": "uvx", "args": ["es-eli-mcp"] } } }
+```
+
+(Budowanie ze źródeł — niżej.)
+
 An MCP server for the Spanish **BOE** (Boletin Oficial del Estado) open-data API. It grounds
 Spanish consolidated legislation: given a BOE id or a date in the official gazette, it returns
 metadata, structure and full consolidated text, with verifiable ELI identifiers and Spanish
