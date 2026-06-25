@@ -1,5 +1,7 @@
 # es-eli-mcp
 
+<!-- mcp-name: io.github.matematicsolutions/es-eli-mcp -->
+
 An MCP server for the Spanish **BOE** (Boletin Oficial del Estado) open-data API. It grounds
 Spanish consolidated legislation: given a BOE id or a date in the official gazette, it returns
 metadata, structure and full consolidated text, with verifiable ELI identifiers and Spanish
