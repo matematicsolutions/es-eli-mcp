@@ -84,3 +84,31 @@ class GazetteResult(_Tolerant):
     total: int
     items: list[GazetteItem] = Field(default_factory=list)
     dataset_note: str = DATASET_NOTE
+
+
+# Tribunal Constitucional (hj.tribunalconstitucional.es) is a separate open-data source
+# (no JSON API - server-rendered HTML), hence its own dataset note.
+TC_DATASET_NOTE = (
+    "Tribunal Constitucional rulings are reached by internal resolution id "
+    "(es_get_constitutional_ruling) or by human citation number+year "
+    "(es_search_constitutional, e.g. numero=31, anno=2010 for 'STC 31/2010'). Source: "
+    "hj.tribunalconstitucional.es (Sistema HJ / Buscador de jurisprudencia constitucional), "
+    "server-rendered HTML, no free-text full-content search."
+)
+
+
+class ConstitutionalRuling(_Tolerant):
+    """A Tribunal Constitucional resolution (Sentencia / Auto / Declaracion)."""
+
+    id: str
+    tipo: str | None = None  # SENTENCIA | AUTO | DECLARACION
+    sala: str | None = None  # Pleno | Sala Primera | Sala Segunda
+    ecli: str | None = None  # the identifier for TC case law (no ELI - ELI covers legislation)
+    encabezamiento: str | None = None
+    fallo: str | None = None
+
+    # Citation contract (Art. 4 CONSTITUTION). TC case law has no ELI; ``ecli`` is the
+    # verifiable identifier instead.
+    human_readable_citation: str | None = None
+    source_url: str | None = None
+    dataset_note: str = TC_DATASET_NOTE

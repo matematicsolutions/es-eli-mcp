@@ -9,10 +9,21 @@ from __future__ import annotations
 
 import pytest
 
-from es_eli_mcp.server import es_browse_gazette, es_get_act, es_get_index, es_get_text
+from es_eli_mcp.server import (
+    es_browse_gazette,
+    es_get_act,
+    es_get_constitutional_ruling,
+    es_get_index,
+    es_get_text,
+    es_search_constitutional,
+)
 
 # Ley Organica 3/2018 (LOPDGDD) - Spanish data protection law - stable consolidated act.
 LOPDGDD = "BOE-A-2018-16673"
+
+# STC 31/2010, de 28 de junio - landmark ruling on the Catalan Statute of Autonomy.
+# Stable historical citation, internal Sistema HJ id 6670 (verified 2026-07-07).
+STC_31_2010_ID = "6670"
 
 
 @pytest.mark.asyncio
@@ -48,3 +59,23 @@ async def test_smoke_browse_gazette() -> None:
     assert result.total > 0, "expected documents in the 2018-12-06 gazette"
     ids = {i.id for i in result.items}
     assert LOPDGDD in ids, f"expected {LOPDGDD} in the gazette of its publication date"
+
+
+@pytest.mark.asyncio
+async def test_smoke_get_constitutional_ruling() -> None:
+    ruling = await es_get_constitutional_ruling(STC_31_2010_ID)
+    assert ruling.id == STC_31_2010_ID
+    assert ruling.ecli == "ECLI:ES:TC:2010:31"
+    citation = ruling.human_readable_citation
+    assert citation is not None and "31/2010" in citation
+    assert citation.startswith("STC ")
+    assert ruling.source_url is not None and ruling.source_url.startswith("https://")
+    assert ruling.fallo is not None and len(ruling.fallo) > 0
+
+
+@pytest.mark.asyncio
+async def test_smoke_search_constitutional() -> None:
+    ruling = await es_search_constitutional(numero="31", anno="2010")
+    assert ruling.id == STC_31_2010_ID
+    assert ruling.ecli == "ECLI:ES:TC:2010:31"
+    assert ruling.human_readable_citation == "STC 31/2010, de 28 de junio"

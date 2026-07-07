@@ -19,22 +19,29 @@ Konfiguracja klienta MCP (stdio):
 
 (Budowanie ze źródeł — niżej.)
 
-An MCP server for the Spanish **BOE** (Boletin Oficial del Estado) open-data API. It grounds
-Spanish consolidated legislation: given a BOE id or a date in the official gazette, it returns
-metadata, structure and full consolidated text, with verifiable ELI identifiers and Spanish
-citations.
+An MCP server for two Spanish open-data sources:
+
+1. **BOE** (Boletin Oficial del Estado) open-data API - consolidated legislation. Given a BOE id
+   or a date in the official gazette, returns metadata, structure and full consolidated text,
+   with verifiable ELI identifiers and Spanish citations.
+2. **Tribunal Constitucional** (Sistema HJ / `hj.tribunalconstitucional.es`) - Spain's
+   Constitutional Court case law (Sentencias / Autos / Declaraciones). Given an internal
+   resolution id, or a citation number+year (e.g. "STC 31/2010"), returns the full ruling with
+   ECLI and a Spanish doctrinal citation.
 
 Part of the MateMatic `eu-legal-mcp` production line - after PL, DE and AT. Same citation
-contract, BOE source.
+contract pattern, two Spanish sources.
 
-> **No free-text search.** The BOE open-data keyword-search endpoint
-> (`/legislacion-consolidada`) currently returns a server-side error, so this connector is
-> grounding + gazette-browse, not keyword search. Discover documents via `es_browse_gazette`
-> (by date) or use a known BOE id / ELI. Every response carries a `dataset_note`.
+> **No free-text search on either source.** The BOE open-data keyword-search endpoint
+> (`/legislacion-consolidada`) currently returns a server-side error; the Tribunal
+> Constitucional site only supports structured search (citation number+year, ECLI, magistrado,
+> materia), not a body-text query. Discover BOE documents via `es_browse_gazette` (by date) or a
+> known BOE id / ELI; discover TC rulings via `es_search_constitutional` (citation number+year)
+> or a known internal id. Every response carries a `dataset_note`.
 >
-> **Licence.** Spanish BOE content is official public information published as open data;
-> reuse presumes acceptance of the BOE reuse conditions. This connector relays that public
-> content with attribution and a `source_url`.
+> **Licence.** Both sources are official public information published as Spanish PSI
+> (public-sector information) open data; reuse presumes acceptance of the respective reuse
+> conditions. This connector relays that public content with attribution and a `source_url`.
 
 ## The tools
 
@@ -44,10 +51,16 @@ contract, BOE source.
 | `es_get_act` | Metadata for a BOE id (eli_uri, official `titulo`, source). |
 | `es_get_index` | The block index (articles, titles) of a consolidated law. |
 | `es_get_text` | Consolidated text (XML), whole or by block. |
+| `es_get_constitutional_ruling` | Tribunal Constitucional ruling by internal resolution id. |
+| `es_search_constitutional` | Resolve a citation (numero+anno, e.g. 31/2010) to the full TC ruling. |
 
-Every response carries the contract: `eli_uri` (a full ELI URL, e.g.
+Every BOE response carries the contract: `eli_uri` (a full ELI URL, e.g.
 `https://www.boe.es/eli/es/lo/2018/12/05/3`), `human_readable_citation` (the official
 `titulo`), and `source_url`.
+
+Every Tribunal Constitucional response carries: `ecli` (e.g. `ECLI:ES:TC:2010:31` - TC case law
+has no ELI, ELI covers legislation only), `human_readable_citation` (Spanish doctrinal
+convention, e.g. "STC 31/2010, de 28 de junio"), and `source_url`.
 
 ## Install
 
@@ -69,10 +82,11 @@ pip install -e .
 Environment:
 
 - `ES_ELI_BASE_URL` - default `https://www.boe.es/datosabiertos/api`
+- `ES_ELI_TC_BASE_URL` - default `https://hj.tribunalconstitucional.es`
 - `ES_ELI_CACHE_DIR` - default `~/.matematic/cache/es-eli`
 - `ES_ELI_AUDIT_DIR` - default `~/.matematic/audit`
 
-No API key. BOE open data is keyless.
+No API key. Both BOE open data and the Tribunal Constitucional site are keyless.
 
 ## Governance
 
@@ -87,8 +101,8 @@ See `CONSTITUTION.md` and `DISCOVERY.md`.
 
 ```bash
 pip install -e ".[dev]"
-pytest tests/test_instructions_drift.py -v   # offline
-pytest tests/test_smoke.py -v                # hits live BOE
+pytest tests/test_instructions_drift.py tests/test_tc_offline.py -v   # offline
+pytest tests/test_smoke.py -v                                          # hits live BOE + TC
 ```
 
 ## Licence

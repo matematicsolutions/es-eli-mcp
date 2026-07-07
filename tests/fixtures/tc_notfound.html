@@ -1,0 +1,580 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Sistema HJ - Buscador de jurisprudencia constitucional</title>
+    <meta name="description" content="Sistema HJ - Buscador de jurisprudencia constitucional">
+    <link rel="SHORTCUT ICON" href="/Content/css/themes/redmond/images/favicon.ico" />
+    <link href="/HJ/110308971" rel="stylesheet" type="text/css" />
+    
+    <link href="/HJ/1261884582" rel="stylesheet" type="text/css" />
+    
+    <link href="/HJ/1501274648" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/Content/css/font-awesome-4.6.3/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <div id="wrapper" class="page ui-tabs">
+        <header id="main-header">
+                <a id="link-home" href="https://www.tribunalconstitucional.es" title="Volver a la p&#225;gina principal">
+                    Volver a la p&#225;gina principal
+                </a>
+                            <div id="language_selector-container">
+                    <a class="selected" href="/es" id="es-language_link" lang="es" title="Español">[Espa&#241;ol]</a>
+                    <a href="/en" id="en-language_link" lang="en" title="English">English</a>
+                    <a href="/fr" id="fr-language_link" lang="fr" title="Français">Fran&#231;ais</a>
+                    
+                    
+                </div>
+            <div id="logo">
+            </div>
+            <div id="textoCabeceraDiv">
+                <span id="textoCabecera">Tribunal Constitucional de Espa&#241;a</span>
+            </div>
+            <div id="title">
+                        <h1>Buscador de jurisprudencia constitucional</h1>
+            </div>
+            
+            
+            <nav>
+                    <ul id="menu" class="ui-tabs-nav ui-helper-reset ui-helper-clearfix">
+                            <li class="hj-tab ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="/es/Busqueda/Index">Buscador</a></li>
+                            <li class="hj-tab ui-state-default ui-corner-top hidden"><a href="/es/Resolucion/List">Listado</a></li>
+                        <li class="hj-tab ui-state-default ui-corner-top hidden"><a href="/es/Resolucion/Show/0">Resoluci&#243;n</a></li>
+                        <li id="loading"></li>
+                    </ul>
+            </nav>
+        </header>
+        <section id="main">
+                
+    
+                        
+
+    <script type="text/javascript">
+    var MyAppUrlSettings = {
+        urlAction: '/es/Busqueda/BuscarAjax',
+        urlDestino: '/es/Resolucion/List'
+    }
+    </script>
+    <div id="buscador-container">
+        <div id="main_column-container">
+<form action="/es/Busqueda/Buscar" id="search_form-container" method="post">
+
+
+
+
+
+<div id="busqueda_rapida-container" class="busqueda-container busqueda-index" style="display:block;">
+    <fieldset>
+        <legend>Búsqueda rápida</legend>
+        <div id="busqueda_rapidaRapida-container" class="busqueda-container boton-buscar" style="padding-top: 10px; float: right;display:block;">
+            <input type="submit" id="buttonSearch6" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+        </div>
+        <h2 class="legend-title">A&#241;o, n&#250;mero, tipo y fecha</h2>
+        <div class="control-group">
+            <label class="label-titulo">Tipo de resoluci&#243;n:</label>
+            <label for="tipoResolucionSentencia">Sentencia</label>
+                <input type="checkbox" value="SENTENCIA" name="TIPO_RESOLUCION" id="tipoResolucionSentencia" checked />
+                <label for="tipoResolucionAuto">Auto</label>
+                <input type="checkbox" value="AUTO" name="TIPO_RESOLUCION" id="tipoResolucionAuto" checked />
+                <label for="tipoResolucionDeclaracion">Declaraci&#243;n</label>
+                <input type="checkbox" value="DECLARACION" name="TIPO_RESOLUCION" id="tipoResolucionDeclaracion" checked />
+        </div>
+        <div class="control-group numandyear">
+            <label class="label-titulo" for="numero-resolucion">N&#250;mero de resoluci&#243;n:</label>
+            <input Value="" accesskey="n" data-val="true" data-val-number="The field NUMERO_RESOLUCION must be a number." id="numero-resolucion" name="NUMERO_RESOLUCION" style="width: 75px" type="text" value="" />
+            <label class="label-titulo" for="annio-resolucion" style="padding-left:15px">A&#241;o:</label>
+            <input Value="" accesskey="a" data-val="true" data-val-number="The field ANNO_RESOLUCION must be a number." id="annio-resolucion" name="ANNO_RESOLUCION" style="width: 75px" type="text" value="" />
+            <i id="deleteRapida" title="Limpiar b&#250;squeda" class="fa fa-times-circle fa-lg" aria-hidden="true" style="color:rgba(42, 87, 144, 1); cursor:pointer;"></i>
+
+            <label class="label-titulo" for="BIS_RESOLUCION" style="padding-left:15px; margin-right:1px;">Bis:</label>
+            <input type="checkbox" value="Bis:" name="BIS_RESOLUCION" id="BIS_RESOLUCION"  />
+
+        </div>
+        <div class="control-group">
+            <label class="label-titulo">Fechas:</label>
+            <label for="date-from">Desde:</label>
+            <input Value="" accesskey="d" class="input-fecha" id="date-from" name="FECHA_DESDE" style="width: 115px" type="text" value="" />
+            <label for="date-to" style="padding-left:15px">Hasta:</label>
+            <input Value="" accesskey="h" class="input-fecha" id="date-to" name="FECHA_HASTA" style="width: 115px" type="text" value="" />
+        </div>
+
+            <div class="control-group">
+                <div class="label-group">
+                    <label for="TIPO_BUSQUEDA_LIBRE" class="removable label-form-group label-titulo">
+                        Seleccione una opci&#243;n:
+                    </label>
+                    <label for="BUSQUEDA_LIBRE" class="label-form-group label-textarea label-titulo">
+                        Texto a buscar:
+                    </label>
+                </div>
+                <div class="input-group">
+                    <select class="cloned" id="TIPO_BUSQUEDA_LIBRE" name="TIPO_BUSQUEDA_LIBRE"><option value="0">Todo el texto de la resoluci&#243;n</option>
+<option value="1">Pre&#225;mbulo</option>
+<option value="2">Antecedentes</option>
+<option selected="selected" value="3">Fundamentos</option>
+<option value="4">Fallo</option>
+<option value="5">Votos Particulares</option>
+<option value="6">S&#237;ntesis Descriptiva</option>
+<option value="7">S&#237;ntesis Anal&#237;tica</option>
+<option value="8">Extractos</option>
+<option value="9">Resumen</option>
+<option value="10">N&#250;m/A&#241;o m&#250;ltiple</option>
+<option value="11">Fecha BOE</option>
+<option value="12">N&#250;mero BOE</option>
+</select>
+                    <textarea class="cloned" cols="20" id="BUSQUEDA_LIBRE" name="BUSQUEDA_LIBRE" rows="2">
+</textarea>
+                </div>
+                <span class="plus-icon removable" title="Duplicar filtro de b&#250;squeda"></span>
+            </div>
+
+
+
+    </fieldset>
+</div>
+
+
+
+
+
+<div id="busqueda_ecli-container" class="busqueda-container busqueda-index" style="display:none;">
+    <fieldset>
+        <legend>B&#250;squeda por ECLI</legend>
+        <div class="control-group" style="padding:15px;">
+            <div class="labels-ecli">
+                <label class="label-ecli" for="anno_resolucion_ecli">ECLI:</label>
+                <label class="label-ecli" for="numero_resolucion_ecli">ES:</label>
+                <label class="label-ecli" for="TIPO_RESOLUCION_ECLI">TC:</label>
+            </div>
+            <input id="anno_resolucion_ecli" type="text" name="anno_resolucion_ecli" value="" style="width:45px;" />
+            <span>:</span>
+            <input id="numero_resolucion_ecli" type="text" name="numero_resolucion_ecli" value="" style="width:45px;" />
+
+
+            <select class="" id="TIPO_RESOLUCION_ECLI" name="TIPO_RESOLUCION_ECLI"><option selected="selected" value="SENTENCIA"></option>
+<option value="AUTO">A</option>
+<option value="DECLARACIÓN">D</option>
+</select>
+            <i id="deleteECLI" title="Limpiar b&#250;squeda" class="fa fa-times-circle fa-lg" aria-hidden="true" style="color:rgba(42, 87, 144, 1); cursor:pointer;"></i>
+            <div id="busqueda_rapidaECLI-container" class="busqueda-container boton-buscar" style="float: right;display:none;">
+                <input type="submit" id="buttonSearch3" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+            </div>
+        </div>
+
+    </fieldset>
+</div>
+
+
+
+
+<div id="busqueda_magistrados-container" class="busqueda-container busqueda-index" style="display:none;">
+    <fieldset>
+        <legend>B&#250;squeda por Magistrados y &#243;rganos</legend>
+        <div class="control-group">
+            <label for="magistradosSelectList" class="label-titulo">
+                Seleccione un Magistrado:
+            </label>
+            <div class="checkboxes-container">
+
+                <input type="checkbox" value="PONENTE" name="PONENTE" id="ponente"  />
+
+                <label for="ponente">Ponente</label>
+                <input type="checkbox" value="VOTOPARTICULAR" name="VOTOPARTICULAR" id="votoParticular"  />
+
+                <label for="votoParticular">Voto Particular</label>
+            </div>
+<select id="magistradosSelectList" name="MAGISTRADO"><option value="0">&lt;Seleccione un Magistrado&gt;</option>
+<option value="65_activo">Arnaldo Alcubilla, Enrique</option>
+<option value="63_activo">Balaguer Callej&#243;n, Mar&#237;a Luisa</option>
+<option value="70_activo">Campo Moreno, Juan Carlos</option>
+<option value="62_activo">Conde-Pumpido Tour&#243;n, C&#225;ndido</option>
+<option value="71_activo">D&#237;ez Bueso, Laura</option>
+<option value="59_activo">Enr&#237;quez Sancho, Ricardo</option>
+<option value="66_activo">Espejel Jorquera, Concepci&#243;n</option>
+<option value="72_activo">Mac&#237;as Casta&#241;o, Jos&#233; Mar&#237;a</option>
+<option value="67_activo">Montalb&#225;n Huertas, Inmaculada</option>
+<option value="64_activo">S&#225;ez Valc&#225;rcel, Ram&#243;n</option>
+<option value="68_activo">Segoviano Astaburuaga, Mar&#237;a Luisa</option>
+<option value="69_activo">Tolosa Tribi&#241;o, C&#233;sar</option>
+<option value="45_inactivo">Arag&#243;n Reyes, Manuel</option>
+<option value="1_inactivo">Arozamena Sierra, Jer&#243;nimo</option>
+<option value="48_inactivo">Asua Batarrita, Adela</option>
+<option value="2_inactivo">Begu&#233; Cant&#243;n, Gloria</option>
+<option value="34_inactivo">Cach&#243;n Villar, Pablo</option>
+<option value="35_inactivo">Casas Baamonde, Mar&#237;a Emilia</option>
+<option value="37_inactivo">Conde Mart&#237;n de Hijas, Vicente</option>
+<option value="25_inactivo">Cruz Villal&#243;n, Pedro</option>
+<option value="21_inactivo">de los Mozos de los Mozos, Jos&#233; Luis</option>
+<option value="38_inactivo">Delgado Barrio, Javier</option>
+<option value="20_inactivo">D&#237;az Eimil, Eugenio</option>
+<option value="3_inactivo">D&#237;ez de Velasco Vallejo, Manuel</option>
+<option value="4_inactivo">Diez-Picazo y Ponce de Le&#243;n, Luis</option>
+<option value="11_inactivo">Escudero del Corral, &#193;ngel</option>
+<option value="12_inactivo">Fern&#225;ndez Viagas, Pl&#225;cido</option>
+<option value="24_inactivo">Gabald&#243;n L&#243;pez, Jos&#233;</option>
+<option value="32_inactivo">Garc&#237;a Manzano, Pablo</option>
+<option value="40_inactivo">Garc&#237;a-Calvo y Montiel, Roberto</option>
+<option value="16_inactivo">Garc&#237;a-Mon y Gonz&#225;lez-Regueral, Fernando</option>
+<option value="5_inactivo">Garc&#237;a-Pelayo y Alonso, Manuel</option>
+<option value="33_inactivo">Garrido Falla, Fernando</option>
+<option value="41_inactivo">Gay Montalvo, Eugeni</option>
+<option value="22_inactivo">Gimeno Sendra, Jos&#233; Vicente</option>
+<option value="6_inactivo">G&#243;mez-Ferrer Morant, Rafael</option>
+<option value="26_inactivo">Gonz&#225;lez Campos, Julio Diego</option>
+<option value="51_inactivo">Gonz&#225;lez Rivas, Juan Jos&#233;</option>
+<option value="57_inactivo">Gonz&#225;lez-Trevijano S&#225;nchez, Pedro Jos&#233;</option>
+<option value="47_inactivo">Hernando Santiago, Francisco Jos&#233;</option>
+<option value="30_inactivo">Jim&#233;nez de Parga y Cabrera, Manuel</option>
+<option value="36_inactivo">Jim&#233;nez S&#225;nchez, Guillermo</option>
+<option value="7_inactivo">Latorre Segura, &#193;ngel</option>
+<option value="15_inactivo">Leguina Villa, Jes&#250;s</option>
+<option value="17_inactivo">L&#243;pez Guerra, Luis</option>
+<option value="58_inactivo">L&#243;pez y L&#243;pez, Enrique</option>
+<option value="55_inactivo">Mart&#237;nez-Vares Garc&#237;a, Santiago</option>
+<option value="27_inactivo">Mendiz&#225;bal Allende, Rafael de</option>
+<option value="8_inactivo">Men&#233;ndez Men&#233;ndez, Aurelio</option>
+<option value="61_inactivo">Montoya Melgar, Alfredo</option>
+<option value="60_inactivo">Narv&#225;ez Rodr&#237;guez, Antonio</option>
+<option value="52_inactivo">Ollero Tassara, Andr&#233;s</option>
+<option value="49_inactivo">Ortega &#193;lvarez, Luis Ignacio</option>
+<option value="14_inactivo">Pera Verdaguer, Francisco</option>
+<option value="50_inactivo">P&#233;rez de los Cobos Orihuel, Francisco</option>
+<option value="46_inactivo">P&#233;rez Tremps, Pablo</option>
+<option value="39_inactivo">P&#233;rez Vera, Elisa</option>
+<option value="53_inactivo">Roca Tr&#237;as, Encarnaci&#243;n</option>
+<option value="43_inactivo">Rodr&#237;guez Arribas, Ram&#243;n</option>
+<option value="23_inactivo">Rodr&#237;guez Bereijo, &#193;lvaro</option>
+<option value="18_inactivo">Rodr&#237;guez-Pi&#241;ero y Bravo-Ferrer, Miguel</option>
+<option value="42_inactivo">Rodr&#237;guez-Zapata P&#233;rez, Jorge</option>
+<option value="9_inactivo">Rubio Llorente, Francisco</option>
+<option value="29_inactivo">Ruiz Vadillo, Enrique</option>
+<option value="44_inactivo">Sala S&#225;nchez, Pascual</option>
+<option value="10_inactivo">Tom&#225;s y Valiente, Francisco</option>
+<option value="13_inactivo">Truyol Serra, Antonio</option>
+<option value="54_inactivo">Vald&#233;s Dal-R&#233;, Fernando</option>
+<option value="19_inactivo">Vega Benayas, Carlos de la</option>
+<option value="28_inactivo">Viver Pi-Sunyer, Carles</option>
+<option value="31_inactivo">Vives Ant&#243;n, Tom&#225;s Salvador</option>
+<option value="56_inactivo">Xiol R&#237;os, Juan Antonio</option>
+<option value="all">&lt;M&#225;s...&gt;</option>
+</select>
+
+        </div>
+        <div class="control-group">
+            <label for="competenciaSelectList" class="label-titulo">
+                &#211;rgano:
+            </label>
+
+            <select id="competenciaSelectList" name="COMPETENCIA"><option value="0">&lt;Todas&gt;</option>
+<option value="1">Pleno</option>
+<option value="2">Sala de vacaciones</option>
+<option value="3">Sala primera</option>
+<option value="4">Sala segunda</option>
+<option value="8">Secci&#243;n cuarta</option>
+<option value="9">Secci&#243;n de vacaciones</option>
+<option value="5">Secci&#243;n primera</option>
+<option value="6">Secci&#243;n segunda</option>
+<option value="7">Secci&#243;n tercera</option>
+</select>
+        </div>
+        <div id="busqueda_rapidaMagistrados-container" class="busqueda-container boton-buscar" style="padding-top: 10px; float: right;display:none;">
+            <input type="submit" id="buttonSearch4" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+        </div>
+    </fieldset>
+</div>
+
+
+
+
+<div id="busqueda_tipo_recursos-container" class="busqueda-container busqueda-index">
+    <fieldset>
+        <legend>B&#250;squeda por Proceso</legend>
+        <div class="control-group">
+            <label for="tipos_recurso-select_list">
+                Tipo de Proceso
+            </label>
+            <select id="tipos_recurso-select_list" multiple="multiple" name="TIPO_RECURSO"><option value="21">Conflicto en defensa de la autonom&#237;a foral</option>
+<option value="11">Conflicto en defensa de la autonom&#237;a local</option>
+<option value="5">Conflicto entre &#243;rganos constitucionales</option>
+<option value="4">Conflicto negativo de competencia</option>
+<option value="14">Conflicto positivo de competencia</option>
+<option value="2">Cuesti&#243;n de inconstitucionalidad</option>
+<option value="12">Cuesti&#243;n interna de inconstitucionalidad</option>
+<option value="19">Cuesti&#243;n prejudicial de validez sobre normas forales fiscales</option>
+<option value="8">Impugnaci&#243;n de disposiciones auton&#243;micas</option>
+<option value="20">Recurso contra normas forales fiscales</option>
+<option value="3">Recurso de amparo</option>
+<option value="7">Recurso de amparo electoral</option>
+<option value="1">Recurso de inconstitucionalidad</option>
+<option value="10">Recurso previo de inconstitucionalidad</option>
+<option value="9">Requerimiento sobre tratados internacionales</option>
+</select>
+        </div>
+        <div id="busqueda_materia_container" class="control-group text_box-container" style="display:none">
+            <label for="MATERIA">
+                Por Materia
+            </label>
+            <select id="MATERIA" multiple="multiple" name="MATERIA"><option value="1">Civil</option>
+<option value="2">Contencioso-Administrativo</option>
+<option value="3">Electoral</option>
+<option value="4">Militar</option>
+<option value="5">Parlamentario</option>
+<option value="6">Penal</option>
+<option value="8">Social</option>
+<option value="9">Otros</option>
+</select>
+        </div>
+        <div class="control-group text_box-container">
+            <div class="label-group-progress">
+                <label for="numero-recurso">
+                    N&#250;m. de Proceso -
+                </label>
+                <input Value="" id="numero-recurso" name="NUMERO_RECURSO" style="width: 110px" type="text" value="" />
+            </div>
+            <div class="label-group-progress">
+                <label for="annio-recurso">
+                    A&#241;o
+                </label>
+                <input Value="" id="annio-recurso" name="ANNO_RECURSO" style="width: 110px" type="text" value="" />
+            </div>
+        </div>
+        <div class="control-group text_box-container">
+            <label for="acumulados">
+                Acumulados
+            </label>
+            <input type="checkbox" value="ACUMULADOS" name="ACUMULADOS" id="acumulados"  />
+        </div>
+        <div id="busqueda_rapidaTiposRecurso-container" class="busqueda-container boton-buscar" style="padding-top: 10px; float: right;display:none;">
+            <input type="submit" id="buttonSearch8" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+        </div>
+    </fieldset>
+</div>
+
+
+
+
+
+<div id="busqueda_normativa-container" class="busqueda-container busqueda-index">
+    <fieldset>
+        <legend>B&#250;squeda por disposiciones citadas</legend>
+        <div class="control-group">
+            <div id="busqueda_rapidaNormativas-container" class="busqueda-container boton-buscar" style="padding-top: 10px; float: right;display:none;">
+                <input type="submit" id="buttonSearch5" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+            </div>
+            <label for="indicesSelectList">
+                Seleccione un criterio:
+            </label>
+            <input id="tique" name="TIQUE" type="hidden" value="" />
+            <input id="normativasIDSeleccionadas" name="normativasIDSeleccionadas" type="hidden" value="" />
+            <input id="normativasSeleccionadas" name="normativasSeleccionadas" type="hidden" value="" />
+            <input id="articulosIDSeleccionados" name="articulosIDSeleccionados" type="hidden" value="" />
+            <input id="articulosSeleccionados" name="articulosSeleccionados" type="hidden" value="" />
+
+
+            <select id="indicesSelectList" name="NUMERO_INDICE"><option value="0">&lt;Criterio&gt;</option>
+<option value="1">Disposiciones con fuerza de ley impugnadas</option>
+<option value="2">Disposiciones generales y resoluciones impugnadas</option>
+<option value="3">Disposiciones citadas</option>
+<option value="4">Resoluciones de &#243;rganos judiciales impugnadas</option>
+<option value="5">Resoluciones de otros tribunales citadas</option>
+</select>
+            <label for="normativa">Normativa:</label>
+            <input class="buscadorNormativaCitada" disabled="disabled" id="normativa" name="NORMATIVA" type="text" value="" />
+            <input type="button" value="A&#241;adir" id="addNormativa" disabled class="" />
+            <input id="normativaId" name="NORMATIVAID" type="hidden" value="" />
+            <div id="selectedNormativas"></div>
+        </div>
+
+    </fieldset>
+</div>
+
+
+<div id="busqueda_doctrinal-container" class="busqueda-container busqueda-index">
+    <fieldset>
+        <legend>B&#250;squeda por an&#225;lisis doctrinal</legend>
+
+        <div class="label-group-doctrinal">
+            <label for="TIPO_BUSQUEDA_LIBRE_DOCTRINAL">
+                Seleccione una opci&#243;n:
+            </label>
+            <div class="control-group select-container">
+                <select id="TIPO_BUSQUEDA_LIBRE_DOCTRINAL" name="TIPO_BUSQUEDA_LIBRE_DOCTRINAL"><option value="23">Todos los campos</option>
+<option value="6">S&#237;ntesis Descriptiva</option>
+<option value="7">S&#237;ntesis Anal&#237;tica</option>
+<option value="8">Extractos</option>
+<option value="9">Resumen</option>
+</select>
+            </div>
+        </div>
+        <div class="label-group-doctrinal">
+            <label for="BUSQUEDA_LIBRE_DOCTRINAL" class="label-form-group label-textarea">
+                Texto a buscar:
+            </label>
+
+            <div class="control-group">
+                <textarea cols="20" id="BUSQUEDA_LIBRE_DOCTRINAL" name="BUSQUEDA_LIBRE_DOCTRINAL" rows="2">
+</textarea>
+            </div>
+        </div>
+        <div id="busqueda_rapidaDoctrinal-container" class="busqueda-container boton-buscar" style="padding-top: 10px; float: right;display:none;">
+            <input type="submit" id="buttonSearch2" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+        </div>
+
+    </fieldset>
+</div>
+
+
+
+<div id="busqueda_descriptor-container" class="busqueda-container busqueda-index">
+    <fieldset>
+        <legend>B&#250;squeda por descriptores sem&#225;nticos</legend>
+        <div class="control-group">
+            <label for="descriptor">Descriptor:</label>
+            <input class="buscadorDescriptores" id="descriptor" name="BUSQUEDA_DESCRIPTORES" type="text" value="" />
+            <input type="button" value="A&#241;adir" id="addDescriptor" disabled class="" />
+            <input id="descriptorId" name="DESCRIPTORID" type="hidden" value="" />
+
+            <ul id="selected-descriptores-list">
+                </ul>
+        </div>
+        <div id="busqueda_rapidaDescriptores-container" class="busqueda-container boton-buscar" style="padding-top: 10px; float: right;display:none;">
+            <input type="submit" id="buttonSearch1" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+        </div>
+        </fieldset>
+        </div>
+
+
+
+
+
+<div id="busqueda_tags-container" class="busqueda-container busqueda-index">
+    <fieldset>
+        <legend>B&#250;squeda por Tique</legend>
+
+        <div class="control-group">
+            <label for="BUSQUEDA_TAGS" class="label-form-group label-textarea" style="margin-bottom: 0;">
+                Texto a buscar:
+            </label>
+            <span class="ui-icon ui-icon-info ui-icon-cursor info" title="Informaci&#243;n de las b&#250;squedas por tique" style="margin-left:520px;"></span>
+            <textarea cols="20" id="BUSQUEDA_TAGS" name="BUSQUEDA_TAGS" rows="2">
+</textarea>
+
+            <div id="busqueda_rapidaTags-container" class="busqueda-container boton-buscar" style="padding-top: 10px; float: right;display: none;">
+                <input type="submit" id="buttonSearch7" value="Buscar" accesskey="b" class="above buttonSearchPpal" />
+            </div>
+        </div>
+
+    </fieldset>
+</div>
+<input name="__RequestVerificationToken" type="hidden" value="lCSHmsZythr_-K4G81UgomX6Kl9ptMPvadYyROiJdU0gBd_Qnr4bYctsckXREzbjaO-7zqZtlpRRcLTu5zbcZwM3pZlBdkOr7o46_xvqI4nIOf7CzsMXBfZ1KiNCmKFDNxQGen1fWQSBJ8UUjR5RwHBtL5K2POXvcoNEgoBaa2g1" /><div class="validation-summary-valid" data-valmsg-summary="true" id="busquedaError"><ul><li style="display:none"></li>
+</ul></div>                <noscript>
+                    <div class="tip">
+                        El formulario puede no mostrarse bien, porque tiene deshabilitado Javascript. Para una experiencia mejor, por favor habilite Javascript.
+                    </div>
+                </noscript>
+</form>        </div>
+            <div id="side_column-container1">
+                <div id="side_column-container">
+                    <a class="ontologia-semantica" href="/es/Descriptor/Index?vista=0" id="tesauro" style="color: #2E6E9E;padding-left:18%;">TESAURO DE VOCES</a>
+                    <br /><br />
+                    <a class="ontologia-semantica" href="/es/Descriptor/Index?vista=1" id="ontologia-semantica" style="color: #2E6E9E; margin-bottom: 10px;padding-left:18%;">ONTOLOG&#205;A SEM&#193;NTICA</a>
+                    <h2>B&#250;squeda especializada</h2>
+                    <ul>
+                        <li>
+                            <label for="initial" class="text" title="B&#250;squeda basada en el tipo, n&#250;mero, fecha y texto de la resoluci&#243;n.">Inicial</label>
+                            <span class="ibutton-container">
+                                <input id="initial" type="checkbox" value="busqueda_rapida-container" checked="checked" />
+                            </span>
+                        </li>
+                        <li>
+                            <label for="expedient-type" class="text" title="B&#250;squeda individual o m&#250;ltiple por tipo de proceso y por n&#250;mero y a&#241;o del recurso.">Por tipo de proceso</label>
+                            <span class="ibutton-container">
+                                <input id="expedient-type" type="checkbox" value="busqueda_tipo_recursos-container" checked="checked" /> 
+                            </span>
+                        </li>
+                        <li>
+                            <label for="magistrates" class="text" title="B&#250;squeda por Magistrado, por Magistrado-ponente, por votos particulares y por &#243;rgano.">Por Magistrados y &#243;rganos</label>
+                            <span class="ibutton-container">
+                                <input id="magistrates" type="checkbox" value="busqueda_magistrados-container"  />
+                            </span>
+                        </li>
+
+                        <li>
+                            <label for="decree" class="text" title="B&#250;squeda por disposiciones enjuiciadas o citadas en las resoluciones.">Por disposiciones</label>
+                            <span class="ibutton-container">
+                                <input id="decree" type="checkbox" value="busqueda_normativa-container"  />
+                            </span>
+                        </li>
+                        <li>
+                            <label for="doctrine-analysis" class="text" title="B&#250;squeda en la s&#237;ntesis descriptiva y anal&#237;tica, en los extractos y en los res&#250;menes de las resoluciones.">Por an&#225;lisis doctrinal</label>
+                            <span class="ibutton-container">
+                                <input id="doctrine-analysis" type="checkbox" value="busqueda_doctrinal-container"  />
+                            </span>
+                        </li>
+                        <li>
+                            <label for="semantic-descriptor" class="text" title="B&#250;squeda por voces.">Por descriptores sem&#225;nticos</label>
+                            <span class="ibutton-container">
+                                <input id="semantic-descriptor" type="checkbox" value="busqueda_descriptor-container"  />
+                            </span>
+                        </li>
+                        <li>
+                            <label for="tags" class="text" title="Recupera los resultados de una b&#250;squeda previa mediante un c&#243;digo que consta al pie del resultado de cada b&#250;squeda.">Por tique de b&#250;squeda</label>
+                            <span class="ibutton-container">
+                                <input id="tags" type="checkbox" value="busqueda_tags-container"  />
+                            </span>
+                        </li>
+                        <li>
+                            <label for="tooltip-ecli" class="text" title="Por ECLI">Por ECLI</label>
+                            <span class="ibutton-container">
+                                <input id="tooltip-ecli" type="checkbox" value="busqueda_ecli-container"  />
+                            </span>
+                        </li>
+                    </ul>
+                    <div id="search_advises-container" class="side_column-info">
+                        <h3>
+                            <span class="ui-icon ui-icon-info"></span>
+                            <span>AYUDA</span>
+                        </h3>
+                        <ul id="advises-list" class="item-list">
+                            <li class="odd">Buscador de Jurisprudencia para localizar de forma r&#225;pida y f&#225;cil toda la doctrina del Tribunal Constitucional desde 1980.</li>
+                            <li class="even">Es posible confeccionar diferentes tipos de b&#250;squeda para acotar los resultados, combinando una o todas las posibilidades de la b&#250;squeda especializada.</li>
+                            <li class="odd">Puede acceder al texto original de la resoluci&#243;n publicado en el BOE (formato PDF), a la p&#225;gina de la Agencia Estatal Bolet&#237;n Oficial del Estado, descargarse las resoluciones en formato OpenXML (compatible con Word y LibreOffice) o imprimirlas.</li>
+                            <li class="even">Las cajas de texto de b&#250;squeda libre permiten la utilizaci&#243;n de los operadores AND (para a&#241;adir acumulativamente t&#233;rminos o expresiones), OR (para buscar alternativamente t&#233;rminos o expresiones) y AND NOT (para excluir t&#233;rminos o expresiones).</li>
+                            <li class="odd add_box"><span></span>Pulse el icono que se encuentra junto a la caja principal para a&#241;adir otras cajas de b&#250;squeda, a fin de combinar diferentes expresiones de b&#250;squeda en una o en varias partes de las resoluciones.</li>
+                            <li class="even">Puede acceder al texto completo de las resoluciones, a sus fundamentos, a su fallo o, en su caso, a los votos particulares. Igualmente puede entrar en su ficha t&#233;cnica o en los &#237;ndices (de disposiciones con fuerza de ley impugnadas y de disposiciones citadas).</li>
+                            <li class="odd suggestion"><span></span>Le agradecer&#237;amos que nos comunicase las erratas que haya encontrado en alguna resoluci&#243;n, colaborando as&#237; en la depuraci&#243;n de la base de Jurisprudencia.</li>
+                            <li class="even suggestionDescriptor"><span></span>Le agradecer&#237;amos que nos indicar&#225; las posibles sugerencias de nuevos descriptores sem&#225;nticos a incluir, colaborando as&#237; en la mejora de la base de Jurisprudencia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        </section>
+        <div style="clear: both">
+        </div>
+        <footer></footer>
+        <div style="text-align: right;">
+            <a href="/es/Mapa/Index" style="font-size: 15px;text-align: center;padding-top: 5px;padding-bottom: 5px;padding-left: 10px;padding-right: 10px;background-color: #f6ad2d;color: #000; border-top-left-radius: 10px; border-top-right-radius: 10px;text-decoration:none;">Mapa Web</a>
+        </div>
+    </div>
+    
+
+
+    <script type="text/javascript" src="/Scripts/iHJ-Global_es.js"></script>
+
+
+
+    <script id="main-script" data-currentlang="es" data-contextpath="/" src="/HJ/166784793" type="text/javascript"></script>
+        <script src="/HJ/-1212242556" type="text/javascript"></script>
+                                        
+
+    
+</body>
+
+</html>

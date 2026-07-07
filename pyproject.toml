@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "es-eli-mcp"
-version = "0.1.0"
-description = "MCP server for the Spanish BOE open-data API (boe.es) — ground consolidated legislation by id/ELI with verifiable citations."
+version = "0.2.0"
+description = "MCP server for Spanish BOE consolidated legislation and Tribunal Constitucional case law — grounded by id/ELI/ECLI with verifiable citations."
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.11"
