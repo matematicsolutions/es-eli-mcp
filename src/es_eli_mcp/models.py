@@ -97,6 +97,133 @@ TC_DATASET_NOTE = (
 )
 
 
+# DGT tax rulings (petete.tributos.hacienda.gob.es) - server-rendered HTML fragments
+# behind the public search form; no JSON API.
+DGT_DATASET_NOTE = (
+    "DGT consultas tributarias are reached by official number (es_get_tax_ruling, e.g. "
+    "'V0001-25') or by full-text/date search (es_search_tax_rulings). Source: "
+    "petete.tributos.hacienda.gob.es (Doctrina Tributaria, ~69,500 consultas vinculantes "
+    "+ ~19,700 consultas generales). Tax rulings have no ELI/ECLI; the official "
+    "NUM-CONSULTA is the durable identifier."
+)
+
+
+class TaxRulingHit(_Tolerant):
+    """One row of a DGT search result."""
+
+    num_consulta: str | None = None
+    descripcion_hechos: str | None = None
+    cuestion_planteada: str | None = None
+
+
+class TaxRulingSearchResult(_Tolerant):
+    """Result of ``es_search_tax_rulings``."""
+
+    total: int
+    total_pages: int
+    page: int
+    database: str  # "vinculantes" | "generales"
+    items: list[TaxRulingHit] = Field(default_factory=list)
+    dataset_note: str = DGT_DATASET_NOTE
+
+
+class TaxRuling(_Tolerant):
+    """A full DGT consulta (result of ``es_get_tax_ruling``)."""
+
+    num_consulta: str | None = None
+    organo: str | None = None
+    fecha_salida: str | None = None
+    normativa: str | None = None
+    descripcion_hechos: str | None = None
+    cuestion_planteada: str | None = None
+    contestacion: str | None = None
+
+    # Citation contract (Art. 4 CONSTITUTION). No ELI for tax rulings; NUM-CONSULTA is
+    # the durable identifier and the permalink carries it.
+    human_readable_citation: str | None = None
+    source_url: str | None = None
+    dataset_note: str = DGT_DATASET_NOTE
+
+
+# TEAC doctrine (DYCTEA) - ASP.NET results page that accepts plain GET filters.
+TEAC_DATASET_NOTE = (
+    "TEAC doctrine (criterios) is reached by RG claim-number segments and/or a "
+    "resolution-date range (es_search_teac_doctrine) and opened by criterio id "
+    "(es_get_teac_criterio, e.g. '00/07082/2025/00/0/1'). Source: DYCTEA "
+    "(serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA, ~6,500 criterios). The "
+    "portal accepts free-text-looking parameters but silently ignores them, so this "
+    "connector offers no full-text search on TEAC."
+)
+
+
+class TeacDoctrineHit(_Tolerant):
+    """One row of a DYCTEA search result."""
+
+    criterio_id: str
+    title: str | None = None
+    snippet: str | None = None
+
+
+class TeacDoctrineSearchResult(_Tolerant):
+    """Result of ``es_search_teac_doctrine``."""
+
+    total: int
+    page: int
+    items: list[TeacDoctrineHit] = Field(default_factory=list)
+    dataset_note: str = TEAC_DATASET_NOTE
+
+
+class TeacCriterioResult(_Tolerant):
+    """A full DYCTEA criterio (result of ``es_get_teac_criterio``)."""
+
+    criterio_id: str
+    rg: str | None = None
+    calificacion: str | None = None
+    unidad_resolutoria: str | None = None
+    fecha_resolucion: str | None = None
+    asunto: str | None = None
+    criterio: str | None = None
+    referencias_normativas: str | None = None
+    texto_resolucion: str | None = None
+
+    human_readable_citation: str | None = None
+    source_url: str | None = None
+    dataset_note: str = TEAC_DATASET_NOTE
+
+
+# AEPD resolutions - Drupal/Solr view with GET exposed filters; full text is a PDF
+# permalink per resolution.
+AEPD_DATASET_NOTE = (
+    "AEPD resolutions are reached by full-text/date search (es_search_aepd_resolutions) "
+    "or by expediente number (es_get_aepd_resolution, e.g. 'PS-00615-2025'). Source: "
+    "www.aepd.es/informes-y-resoluciones/resoluciones (~46,800 resolutions). The full "
+    "text is the linked PDF (pdf_url); this connector returns the teaser + permalink, "
+    "not the PDF body."
+)
+
+
+class AepdResolutionModel(_Tolerant):
+    """One AEPD resolution teaser (search hit or es_get_aepd_resolution result)."""
+
+    expediente: str
+    pdf_url: str | None = None
+    fecha_firma: str | None = None
+    snippet: str | None = None
+
+    human_readable_citation: str | None = None
+    source_url: str | None = None
+    dataset_note: str = AEPD_DATASET_NOTE
+
+
+class AepdSearchResult(_Tolerant):
+    """Result of ``es_search_aepd_resolutions``."""
+
+    total: int
+    page: int
+    items: list[AepdResolutionModel] = Field(default_factory=list)
+    dataset_note: str = AEPD_DATASET_NOTE
+
+
 class ConstitutionalRuling(_Tolerant):
     """A Tribunal Constitucional resolution (Sentencia / Auto / Declaracion)."""
 
