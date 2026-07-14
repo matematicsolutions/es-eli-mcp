@@ -21,6 +21,7 @@ import httpx
 from fastmcp import FastMCP
 from mcp.types import ToolAnnotations
 
+from . import runtime
 from .aepd_client import (
     DEFAULT_AEPD_BASE_URL,
     AepdClient,
@@ -165,7 +166,7 @@ mcp: FastMCP = FastMCP(name="es-eli-mcp", instructions=INSTRUCTIONS)
 
 
 def _base_url() -> str:
-    return os.environ.get("ES_ELI_BASE_URL", DEFAULT_BASE_URL).rstrip("/")
+    return os.environ.get("ES_ELI_BASE_URL", runtime.base_url("eli", DEFAULT_BASE_URL)).rstrip("/")
 
 
 def _audit() -> AuditLogger:
@@ -185,7 +186,7 @@ def _map_upstream(exc: Exception) -> Exception:
 
 
 def _tc_base_url() -> str:
-    return os.environ.get("ES_ELI_TC_BASE_URL", DEFAULT_TC_BASE_URL).rstrip("/")
+    return os.environ.get("ES_ELI_TC_BASE_URL", runtime.base_url("eli_tc", DEFAULT_TC_BASE_URL)).rstrip("/")
 
 
 def _require_id(boe_id: str) -> str:
@@ -465,15 +466,15 @@ async def es_search_constitutional(
 
 
 def _dgt_base_url() -> str:
-    return os.environ.get("ES_ELI_DGT_BASE_URL", DEFAULT_DGT_BASE_URL).rstrip("/")
+    return os.environ.get("ES_ELI_DGT_BASE_URL", runtime.base_url("eli_dgt", DEFAULT_DGT_BASE_URL)).rstrip("/")
 
 
 def _teac_base_url() -> str:
-    return os.environ.get("ES_ELI_TEAC_BASE_URL", DEFAULT_TEAC_BASE_URL).rstrip("/")
+    return os.environ.get("ES_ELI_TEAC_BASE_URL", runtime.base_url("eli_teac", DEFAULT_TEAC_BASE_URL)).rstrip("/")
 
 
 def _aepd_base_url() -> str:
-    return os.environ.get("ES_ELI_AEPD_BASE_URL", DEFAULT_AEPD_BASE_URL).rstrip("/")
+    return os.environ.get("ES_ELI_AEPD_BASE_URL", runtime.base_url("eli_aepd", DEFAULT_AEPD_BASE_URL)).rstrip("/")
 
 
 def _map_upstream_extra(exc: Exception) -> Exception:
