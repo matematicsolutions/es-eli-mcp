@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "generated_note": "Volatile runtime config for es-eli-mcp. Edit + re-run the release workflow to repoint endpoints or bump the citation grammar WITHOUT a PyPI release. Consumed lazily on first tool call; falls back to the hardcoded defaults in the client modules if unavailable (offline-safe).",
+  "base_urls": {
+    "eli": "https://www.boe.es/datosabiertos/api",
+    "eli_tc": "https://hj.tribunalconstitucional.es",
+    "eli_dgt": "https://petete.tributos.hacienda.gob.es",
+    "eli_teac": "https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA",
+    "eli_aepd": "https://www.aepd.es"
+  },
+  "citation_grammar_version": "es-eli/2026.07"
+}
