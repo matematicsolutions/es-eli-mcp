@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.matematicsolutions/es-eli-mcp",
   "description": "Spanish law MCP: BOE legislation, Constitutional Court, DGT and TEAC tax, AEPD resolutions.",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "repository": {
     "url": "https://github.com/matematicsolutions/es-eli-mcp",
     "source": "github"
@@ -12,7 +12,7 @@
       "registryType": "pypi",
       "registryBaseUrl": "https://pypi.org",
       "identifier": "es-eli-mcp",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
