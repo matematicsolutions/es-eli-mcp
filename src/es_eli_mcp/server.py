@@ -119,6 +119,7 @@ Criterios of the Spanish tax administrative tribunals (DYCTEA, ~6,500 criterios 
 
 ## Hard constraints
 
+- **Do not answer past the edge of this corpus** - when a search comes back empty, or the question touches material this connector does not carry, call `es_coverage` and relay what it says is missing. Absence here is not absence in the law.
 - **No free-text search on BOE** - the BOE open-data keyword-search endpoint is unavailable (server-side error). Discover via `es_browse_gazette` (by date) or use a known BOE id / ELI. Relay the `dataset_note`.
 - **No free-text full-content search on Tribunal Constitucional** - `es_search_constitutional` resolves by citation number+year only (the site's own search form), not by keyword.
 - **No free-text search on TEAC** - DYCTEA accepts text-looking parameters but silently ignores them; `es_search_teac_doctrine` filters by RG segments and dates only.
