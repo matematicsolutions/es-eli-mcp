@@ -91,6 +91,7 @@ contract pattern, five Spanish sources.
 | `es_get_teac_criterio` | Full TEAC criterio + resolution text by DYCTEA id. |
 | `es_search_aepd_resolutions` | Full-text/date search over AEPD resolutions. |
 | `es_get_aepd_resolution` | AEPD resolution + verified full-text PDF permalink by expediente. |
+| `es_coverage` | Declare what this connector covers, when each family was captured, and - explicitly - what it does NOT cover. Every gap carries a fallback. |
 
 Every BOE response carries the contract: `eli_uri` (a full ELI URL, e.g.
 `https://www.boe.es/eli/es/lo/2018/12/05/3`), `human_readable_citation` (the official
