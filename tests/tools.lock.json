@@ -1,0 +1,1716 @@
+{
+  "package_version": "0.5.3",
+  "tools": {
+    "es_browse_gazette": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "List documents published in the official BOE gazette on a date.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "date": {
+              "description": "the publication date as ``YYYYMMDD`` (e.g. ``\"20181206\"``).",
+              "type": "string"
+            }
+          },
+          "required": [
+            "date"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_browse_gazette",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "Result of ``es_browse_gazette``.",
+          "properties": {
+            "dataset_note": {
+              "default": "BOE consolidated legislation is reached by BOE id / ELI (es_get_act, es_get_text) or by browsing the daily gazette (es_browse_gazette). The BOE open-data keyword-search endpoint is unavailable (server-side error), so this connector offers no free-text search.",
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "items": {
+              "items": {
+                "additionalProperties": true,
+                "description": "One document published in a daily BOE gazette.",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "titulo": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "required": [
+                  "id"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "total": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "date",
+            "total"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "03a9af783ce697dd2712e8af01df935ec37fcb82f98893628a1ff482c3918207"
+    },
+    "es_coverage": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Declare what this connector covers, how it is sourced, and what it does NOT cover.\n\nCall this before telling a user that the law \"does not contain\" something, and whenever\na search comes back empty: the absence may be a gap in this connector rather than in the\nlaw. Every gap carries a fallback saying where to look instead.\n\nReturns:\n    ``Coverage`` with families, an as-of note, and a non-empty list of known gaps.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {},
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_coverage",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "What this connector covers, how it is sourced, and what it does not cover.",
+          "properties": {
+            "as_of_note": {
+              "description": "States what the dates mean, and what they do not promise.",
+              "type": "string"
+            },
+            "families": {
+              "items": {
+                "additionalProperties": true,
+                "description": "One data family this connector exposes.",
+                "properties": {
+                  "captured_at": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null,
+                    "description": "Date this family was last captured (ISO). None when queried live."
+                  },
+                  "live": {
+                    "default": true,
+                    "description": "True when queried live instead of from a snapshot.",
+                    "type": "boolean"
+                  },
+                  "name": {
+                    "description": "Data family, e.g. 'Federal legislation'.",
+                    "type": "string"
+                  },
+                  "source": {
+                    "description": "Official source the data comes from.",
+                    "type": "string"
+                  },
+                  "tool": {
+                    "description": "Tool or tools that reach this family.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "tool",
+                  "source"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "known_gaps": {
+              "description": "Never empty. An empty list would mean 'not checked', not 'no gaps'.",
+              "items": {
+                "additionalProperties": true,
+                "description": "A known, named hole in this connector's coverage - plus the way around it.",
+                "properties": {
+                  "fallback": {
+                    "description": "Where to go instead.",
+                    "type": "string"
+                  },
+                  "family": {
+                    "description": "Which family the gap belongs to.",
+                    "type": "string"
+                  },
+                  "id": {
+                    "description": "Stable gap identifier.",
+                    "type": "string"
+                  },
+                  "missing": {
+                    "description": "What is NOT available through this connector.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "family",
+                  "missing",
+                  "fallback"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "status": {
+              "default": "ok",
+              "enum": [
+                "ok",
+                "degraded",
+                "failed"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "as_of_note"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "2d86db2cd6dc5d38c01418d867cecfe77c221f2b368b585c876eaa69ceef9c1f"
+    },
+    "es_get_act": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Fetch consolidated-law metadata from BOE by id.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "boe_id": {
+              "description": "a BOE identifier, e.g. ``\"BOE-A-2018-16673\"``.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "boe_id"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_get_act",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "A consolidated BOE law (from /metadatos).",
+          "properties": {
+            "dataset_note": {
+              "default": "BOE consolidated legislation is reached by BOE id / ELI (es_get_act, es_get_text) or by browsing the daily gazette (es_browse_gazette). The BOE open-data keyword-search endpoint is unavailable (server-side error), so this connector offers no free-text search.",
+              "type": "string"
+            },
+            "departamento": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "eli_uri": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "estado_consolidacion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "fecha_disposicion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "fecha_publicacion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "human_readable_citation": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "numero_oficial": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "rango": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "titulo": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            }
+          },
+          "type": "object"
+        }
+      },
+      "sha256": "79580c71331a074f29179c3231fc3aa9c6a757f94501b079a5c172dd3dec2639"
+    },
+    "es_get_aepd_resolution": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Resolve an AEPD expediente number to its resolution and full-text PDF permalink.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "expediente": {
+              "description": "the AEPD procedure number, e.g. ``\"PS-00615-2025\"`` (PS = sanciones,\nPD = derechos, AI = actuaciones de investigacion).",
+              "type": "string"
+            }
+          },
+          "required": [
+            "expediente"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_get_aepd_resolution",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "One AEPD resolution teaser (search hit or es_get_aepd_resolution result).",
+          "properties": {
+            "dataset_note": {
+              "default": "AEPD resolutions are reached by full-text/date search (es_search_aepd_resolutions) or by expediente number (es_get_aepd_resolution, e.g. 'PS-00615-2025'). Source: www.aepd.es/informes-y-resoluciones/resoluciones (~46,800 resolutions). The full text is the linked PDF (pdf_url); this connector returns the teaser + permalink, not the PDF body.",
+              "type": "string"
+            },
+            "expediente": {
+              "type": "string"
+            },
+            "fecha_firma": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "human_readable_citation": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "pdf_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "snippet": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            }
+          },
+          "required": [
+            "expediente"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "582acb12b77be7da14a0e9ee249877453a41e08d4da52eea31abd8753341d865"
+    },
+    "es_get_constitutional_ruling": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Fetch a Tribunal Constitucional ruling (Sentencia/Auto/Declaracion) by internal id.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "resolution_id": {
+              "description": "the internal Sistema HJ sequential id (e.g. ``\"6670\"`` for STC 31/2010).\nGet this id either from ``es_search_constitutional`` or from a hyperlink inside\nanother ruling's text (``.../Resolucion/Show/{id}``).",
+              "type": "string"
+            }
+          },
+          "required": [
+            "resolution_id"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_get_constitutional_ruling",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "A Tribunal Constitucional resolution (Sentencia / Auto / Declaracion).",
+          "properties": {
+            "dataset_note": {
+              "default": "Tribunal Constitucional rulings are reached by internal resolution id (es_get_constitutional_ruling) or by human citation number+year (es_search_constitutional, e.g. numero=31, anno=2010 for 'STC 31/2010'). Source: hj.tribunalconstitucional.es (Sistema HJ / Buscador de jurisprudencia constitucional), server-rendered HTML, no free-text full-content search.",
+              "type": "string"
+            },
+            "ecli": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "encabezamiento": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "fallo": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "human_readable_citation": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "id": {
+              "type": "string"
+            },
+            "sala": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "tipo": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "e13245532c6ac758e1075a000951ba8e5e6d240f5349968bc8315fa941bdf3e3"
+    },
+    "es_get_index": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "List the block index (articles, titles) of a consolidated law.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "boe_id": {
+              "description": "a BOE identifier, e.g. ``\"BOE-A-2018-16673\"``.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "boe_id"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_get_index",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "Result of ``es_get_index``.",
+          "properties": {
+            "blocks": {
+              "items": {
+                "additionalProperties": true,
+                "description": "One block in a law's text index.",
+                "properties": {
+                  "id": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "titulo": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "url": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "dataset_note": {
+              "default": "BOE consolidated legislation is reached by BOE id / ELI (es_get_act, es_get_text) or by browsing the daily gazette (es_browse_gazette). The BOE open-data keyword-search endpoint is unavailable (server-side error), so this connector offers no free-text search.",
+              "type": "string"
+            },
+            "id": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "c734ba7e6dce090b988d0ca8ac1f1c7413526bbcbf52bed0bf4f442fb3554b5d"
+    },
+    "es_get_tax_ruling": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Fetch a full DGT tax ruling by its official number.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "numero_consulta": {
+              "description": "the official NUM-CONSULTA, e.g. ``\"V0001-25\"`` (vinculante)\nor ``\"0001-03\"`` (general).",
+              "type": "string"
+            }
+          },
+          "required": [
+            "numero_consulta"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_get_tax_ruling",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "A full DGT consulta (result of ``es_get_tax_ruling``).",
+          "properties": {
+            "contestacion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "cuestion_planteada": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "dataset_note": {
+              "default": "DGT consultas tributarias are reached by official number (es_get_tax_ruling, e.g. 'V0001-25') or by full-text/date search (es_search_tax_rulings). Source: petete.tributos.hacienda.gob.es (Doctrina Tributaria, ~69,500 consultas vinculantes + ~19,700 consultas generales). Tax rulings have no ELI/ECLI; the official NUM-CONSULTA is the durable identifier.",
+              "type": "string"
+            },
+            "descripcion_hechos": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "fecha_salida": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "human_readable_citation": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "normativa": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "num_consulta": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "organo": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            }
+          },
+          "type": "object"
+        }
+      },
+      "sha256": "d97cf25e3abe527ed62b5ef70b5641b79d52189742f67e511616ed54b95059a2"
+    },
+    "es_get_teac_criterio": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Fetch one TEAC criterio (with the full resolution text) by its DYCTEA id.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "criterio_id": {
+              "description": "the DYCTEA id from ``es_search_teac_doctrine``, e.g.\n``\"00/07082/2025/00/0/1\"``.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "criterio_id"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_get_teac_criterio",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "A full DYCTEA criterio (result of ``es_get_teac_criterio``).",
+          "properties": {
+            "asunto": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "calificacion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "criterio": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "criterio_id": {
+              "type": "string"
+            },
+            "dataset_note": {
+              "default": "TEAC doctrine (criterios) is reached by RG claim-number segments and/or a resolution-date range (es_search_teac_doctrine) and opened by criterio id (es_get_teac_criterio, e.g. '00/07082/2025/00/0/1'). Source: DYCTEA (serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA, ~6,500 criterios). The portal accepts free-text-looking parameters but silently ignores them, so this connector offers no full-text search on TEAC.",
+              "type": "string"
+            },
+            "fecha_resolucion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "human_readable_citation": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "referencias_normativas": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "rg": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "texto_resolucion": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "unidad_resolutoria": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            }
+          },
+          "required": [
+            "criterio_id"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "bf7662b2b97daa0ee6f1d186021c21c3cef467203fda58c0e37edc37c9dbbc9e"
+    },
+    "es_get_text": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Fetch the consolidated text (XML) of a law, whole or by block.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "block_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "optional block id from ``es_get_index`` (e.g. ``\"a1\"`` for Articulo 1).\nOmit for the full consolidated text (can be large)."
+            },
+            "boe_id": {
+              "description": "a BOE identifier, e.g. ``\"BOE-A-2018-16673\"``.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "boe_id"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_get_text",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "Result of ``es_get_text`` (consolidated text, XML).",
+          "properties": {
+            "block_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "byte_size": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "content": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "content_type": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "dataset_note": {
+              "default": "BOE consolidated legislation is reached by BOE id / ELI (es_get_act, es_get_text) or by browsing the daily gazette (es_browse_gazette). The BOE open-data keyword-search endpoint is unavailable (server-side error), so this connector offers no free-text search.",
+              "type": "string"
+            },
+            "eli_uri": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "format": {
+              "default": "xml",
+              "type": "string"
+            },
+            "human_readable_citation": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "id": {
+              "type": "string"
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "5e8539f6c69859bc25f28a39feba073b3e518218e39eeef26d84dbe51b912dfd"
+    },
+    "es_search_aepd_resolutions": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Search AEPD (Spanish DPA) resolutions by full text and/or signature date.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "fecha_desde": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "earliest signature date, ``dd/mm/aaaa``."
+            },
+            "fecha_hasta": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "latest signature date, ``dd/mm/aaaa``."
+            },
+            "page": {
+              "default": 1,
+              "description": "1-based results page (10 hits per page).",
+              "type": "integer"
+            },
+            "texto": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "full-text query (Solr), e.g. ``\"videovigilancia\"`` - an expediente\nnumber also works as an exact query."
+            }
+          },
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_search_aepd_resolutions",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "Result of ``es_search_aepd_resolutions``.",
+          "properties": {
+            "dataset_note": {
+              "default": "AEPD resolutions are reached by full-text/date search (es_search_aepd_resolutions) or by expediente number (es_get_aepd_resolution, e.g. 'PS-00615-2025'). Source: www.aepd.es/informes-y-resoluciones/resoluciones (~46,800 resolutions). The full text is the linked PDF (pdf_url); this connector returns the teaser + permalink, not the PDF body.",
+              "type": "string"
+            },
+            "items": {
+              "items": {
+                "additionalProperties": true,
+                "description": "One AEPD resolution teaser (search hit or es_get_aepd_resolution result).",
+                "properties": {
+                  "dataset_note": {
+                    "default": "AEPD resolutions are reached by full-text/date search (es_search_aepd_resolutions) or by expediente number (es_get_aepd_resolution, e.g. 'PS-00615-2025'). Source: www.aepd.es/informes-y-resoluciones/resoluciones (~46,800 resolutions). The full text is the linked PDF (pdf_url); this connector returns the teaser + permalink, not the PDF body.",
+                    "type": "string"
+                  },
+                  "expediente": {
+                    "type": "string"
+                  },
+                  "fecha_firma": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "human_readable_citation": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "pdf_url": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "snippet": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "source_url": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "required": [
+                  "expediente"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "total",
+            "page"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "6c6e4c6532bc849dc161e69800ce0f7d8e1c24420373e0a494205913fc423e3b"
+    },
+    "es_search_constitutional": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Resolve a Tribunal Constitucional citation (number + year) to the full ruling.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "anno": {
+              "description": "the citation year, e.g. ``\"2010\"``.",
+              "type": "string"
+            },
+            "numero": {
+              "description": "the citation number, e.g. ``\"31\"`` for \"STC 31/2010\".",
+              "type": "string"
+            },
+            "tipo": {
+              "default": "SENTENCIA",
+              "description": "one of ``\"SENTENCIA\"`` (default, -> STC), ``\"AUTO\"`` (-> ATC), or\n``\"DECLARACION\"`` (-> DTC).",
+              "type": "string"
+            }
+          },
+          "required": [
+            "numero",
+            "anno"
+          ],
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_search_constitutional",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "A Tribunal Constitucional resolution (Sentencia / Auto / Declaracion).",
+          "properties": {
+            "dataset_note": {
+              "default": "Tribunal Constitucional rulings are reached by internal resolution id (es_get_constitutional_ruling) or by human citation number+year (es_search_constitutional, e.g. numero=31, anno=2010 for 'STC 31/2010'). Source: hj.tribunalconstitucional.es (Sistema HJ / Buscador de jurisprudencia constitucional), server-rendered HTML, no free-text full-content search.",
+              "type": "string"
+            },
+            "ecli": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "encabezamiento": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "fallo": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "human_readable_citation": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "id": {
+              "type": "string"
+            },
+            "sala": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "source_url": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            },
+            "tipo": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "64c58d66ecc83197d662dac6b13dd5dd04a8788223665bf4e0e255651a5f643e"
+    },
+    "es_search_tax_rulings": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Search DGT tax rulings (consultas tributarias) by free text and/or date.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "database": {
+              "default": "vinculantes",
+              "description": "``\"vinculantes\"`` (default, V-numbers, binding) or ``\"generales\"``.",
+              "type": "string"
+            },
+            "fecha_desde": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "earliest ``fecha salida``, ``dd/mm/aaaa``."
+            },
+            "fecha_hasta": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "latest ``fecha salida``, ``dd/mm/aaaa`` (requires fecha_desde)."
+            },
+            "page": {
+              "default": 1,
+              "description": "1-based results page (20 hits per page).",
+              "type": "integer"
+            },
+            "texto": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "free-text query over the ruling corpus (e.g. ``\"aerotermia\"``)."
+            }
+          },
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_search_tax_rulings",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "Result of ``es_search_tax_rulings``.",
+          "properties": {
+            "database": {
+              "type": "string"
+            },
+            "dataset_note": {
+              "default": "DGT consultas tributarias are reached by official number (es_get_tax_ruling, e.g. 'V0001-25') or by full-text/date search (es_search_tax_rulings). Source: petete.tributos.hacienda.gob.es (Doctrina Tributaria, ~69,500 consultas vinculantes + ~19,700 consultas generales). Tax rulings have no ELI/ECLI; the official NUM-CONSULTA is the durable identifier.",
+              "type": "string"
+            },
+            "items": {
+              "items": {
+                "additionalProperties": true,
+                "description": "One row of a DGT search result.",
+                "properties": {
+                  "cuestion_planteada": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "descripcion_hechos": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "num_consulta": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            },
+            "total_pages": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "total",
+            "total_pages",
+            "page",
+            "database"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "be0e586e89bb554e992ead0e9c1e51a8b5466e66f7e7ba1b4beea15231834336"
+    },
+    "es_search_teac_doctrine": {
+      "descriptor": {
+        "annotations": {
+          "destructiveHint": false,
+          "idempotentHint": true,
+          "openWorldHint": true,
+          "readOnlyHint": true
+        },
+        "description": "Search TEAC doctrine (DYCTEA criterios) by RG segments and/or date range.",
+        "inputSchema": {
+          "additionalProperties": false,
+          "properties": {
+            "anno": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "RG year segment, e.g. ``\"2025\"``."
+            },
+            "fecha_desde": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "earliest resolution date, ``dd/mm/aaaa``."
+            },
+            "fecha_hasta": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "latest resolution date, ``dd/mm/aaaa``."
+            },
+            "numero": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "RG claim number segment, e.g. ``\"07082\"``."
+            },
+            "page": {
+              "default": 1,
+              "description": "1-based results page (10 hits per page, portal caps display at 100).",
+              "type": "integer"
+            },
+            "sede": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "description": "RG sede segment, e.g. ``\"00\"`` (TEAC) - first part of RG 00/07082/2025."
+            }
+          },
+          "type": "object"
+        },
+        "meta": {
+          "fastmcp": {
+            "tags": []
+          }
+        },
+        "name": "es_search_teac_doctrine",
+        "outputSchema": {
+          "additionalProperties": true,
+          "description": "Result of ``es_search_teac_doctrine``.",
+          "properties": {
+            "dataset_note": {
+              "default": "TEAC doctrine (criterios) is reached by RG claim-number segments and/or a resolution-date range (es_search_teac_doctrine) and opened by criterio id (es_get_teac_criterio, e.g. '00/07082/2025/00/0/1'). Source: DYCTEA (serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA, ~6,500 criterios). The portal accepts free-text-looking parameters but silently ignores them, so this connector offers no full-text search on TEAC.",
+              "type": "string"
+            },
+            "items": {
+              "items": {
+                "additionalProperties": true,
+                "description": "One row of a DYCTEA search result.",
+                "properties": {
+                  "criterio_id": {
+                    "type": "string"
+                  },
+                  "snippet": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  },
+                  "title": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "default": null
+                  }
+                },
+                "required": [
+                  "criterio_id"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "page": {
+              "type": "integer"
+            },
+            "total": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "total",
+            "page"
+          ],
+          "type": "object"
+        }
+      },
+      "sha256": "d4dfb32585f73e9d6e9131b70dd1eecbe60cd8e4f77ed4074410402f844006cd"
+    }
+  },
+  "toolset_sha256": "99ebd477754254d7527840cb0207fbdc0999039a34d08b9e7573dedcd4d2d07e"
+}
