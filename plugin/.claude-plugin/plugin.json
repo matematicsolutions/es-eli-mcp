@@ -1,0 +1,41 @@
+{
+  "name": "es-eli-mcp",
+  "description": "Spanish law with verifiable citations: consolidated legislation and the daily gazette from the BOE (ELI identifiers, structured text), Constitutional Court rulings, binding tax rulings (DGT), TEAC administrative tax doctrine and AEPD data protection resolutions. Every answer carries the official source and identifier, so a citation can be checked instead of trusted. Queries go only to these official Spanish sources; nothing goes to MateMatic.",
+  "version": "0.5.3",
+  "author": {
+    "name": "Wieslaw Mazur / MateMatic Solutions"
+  },
+  "homepage": "https://matematicsolutions.com/en/boutique/connectors",
+  "repository": "https://github.com/matematicsolutions/es-eli-mcp",
+  "documentationUrl": "https://github.com/matematicsolutions/es-eli-mcp/tree/main/plugin#readme",
+  "supportUrl": "https://github.com/matematicsolutions/es-eli-mcp/issues",
+  "privacyPolicyUrl": "https://github.com/matematicsolutions/es-eli-mcp/tree/main/plugin#data",
+  "termsOfServiceUrl": "https://github.com/matematicsolutions/es-eli-mcp/blob/main/LICENSE",
+  "license": "Apache-2.0",
+  "keywords": [
+    "legal",
+    "spain",
+    "law",
+    "legislation",
+    "case-law",
+    "tax",
+    "gdpr",
+    "citations",
+    "mcp"
+  ],
+  "mcpServers": {
+    "es-eli-mcp": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--frozen",
+        "--project",
+        "${CLAUDE_PLUGIN_ROOT}/server",
+        "es-eli-mcp"
+      ],
+      "env": {
+        "ES_ELI_RUNTIME_URL": ""
+      }
+    }
+  }
+}

@@ -5,6 +5,14 @@
 
 ## Install (one command)
 
+As a Claude plugin (Claude Code or the desktop app, needs [uv](https://docs.astral.sh/uv/));
+see [plugin/README.md](plugin/README.md) for what it sends and stores:
+
+```
+/plugin marketplace add matematicsolutions/es-eli-mcp
+/plugin install es-eli-mcp@es-eli-mcp
+```
+
 Published on PyPI + MCP Registry (`io.github.matematicsolutions/es-eli-mcp`). Run without cloning:
 
 ```bash
@@ -134,7 +142,12 @@ No API key. All five sources are keyless.
 
 - **Public data only** - read-only against the five official sources; no client data leaves the machine.
 - **Audit log** - every tool call appends one JSON line to `~/.matematic/audit/es-eli-mcp.jsonl`.
-- **Vendor-neutral** - talks only to the official `*.boe.es` / `*.tribunalconstitucional.es` / `*.hacienda.gob.es` / `*.aepd.es` hosts; no LLM provider, no telemetry.
+- **Network** - the server talks to the official `*.boe.es` / `*.tribunalconstitucional.es` /
+  `*.hacienda.gob.es` / `*.aepd.es` hosts and the local filesystem. Once, on first use, it also
+  fetches a small configuration file (`es-runtime.json.gz`, updated source addresses) from this
+  repository's GitHub Releases. That request carries no query content; GitHub's download counter
+  for the file is the only usage signal we see. `ES_ELI_RUNTIME_URL=""` turns it off; the Claude
+  plugin ships with it off. No LLM provider, no other telemetry.
 - **Verifiable citations** - every response is independently checkable via `source_url`.
 
 See `CONSTITUTION.md` and `DISCOVERY.md`.
