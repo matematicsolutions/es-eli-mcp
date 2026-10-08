@@ -2,8 +2,10 @@
 
 Spanish law with verifiable citations, as a Claude plugin. It runs the
 [es-eli-mcp](https://github.com/matematicsolutions/es-eli-mcp) MCP server, version 0.5.3
-from PyPI. `server/uv.lock` pins that package and every dependency with hashes, and the
-plugin starts it with `uv run --frozen`, so it runs exactly what was reviewed. Every
+from PyPI. `uv.lock`, next to the manifest, pins that package and every dependency with
+hashes. The plugin starts it with `uvx es-eli-mcp==0.5.3`, and Claude Code's locked launch
+installs exactly the set in `uv.lock`, so it runs what was reviewed. (Run by hand outside
+Claude Code, plain `uvx` resolves the dependency ranges from PyPI instead.) Every
 answer carries the official source, so a citation can be checked instead of trusted.
 
 What it covers: consolidated legislation and the daily gazette from the BOE open data API (ELI identifiers, index and text blocks), Constitutional Court rulings (hj.tribunalconstitucional.es), binding tax rulings of the Directorate-General for Taxes (DGT), TEAC doctrine (Tribunal Economico-Administrativo Central) and AEPD resolutions. The full tool list is in the
@@ -12,7 +14,7 @@ What it covers: consolidated legislation and the daily gazette from the BOE open
 ## Requirements
 
 Claude Code or the Claude desktop app, and [uv](https://docs.astral.sh/uv/) on your
-machine (it installs the locked packages on first start and runs the server).
+machine (its `uvx` installs the locked packages on first start and runs the server).
 
 ## Install
 
